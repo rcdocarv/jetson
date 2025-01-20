@@ -6,7 +6,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
-**Upgrade para versão mais recente do pacotes**
+**PIP e jtop**
 ```shell
 sudo apt install python3-pip
 sudo pip3 install -U jetson-stats
