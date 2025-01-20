@@ -28,6 +28,7 @@ sudo apt install nvidia-cuda-toolkit -y
 git clone https://github.com/mdegans/nano_build_opencv
 cd nano_build_opencv
 -- nao tem CUDA continuar depois https://www.youtube.com/watch?v=BCNnqTFi-Gs&t=3s
+https://github.com/mdegans/nano_build_opencv
 ```
 
 ## Título do documento
