@@ -9,6 +9,7 @@ sudo apt upgrade && sudo apt dist-upgrade
 ```shell
 sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
+sudo systemctl restart jtop.service
 jtop
 ```
 **CUDA**
