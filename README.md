@@ -12,6 +12,10 @@ sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
 jtop
 ```
+**CUDA**
+```shell
+
+```
 
 **OPEN CV + CUDA**
 ```shell
