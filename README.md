@@ -6,7 +6,11 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
-
+**Upgrade para versão mais recente do pacotes**
+```shell
+sudo apt install python3-pip
+sudo pip3 install -U jetson-stats
+```
 ## Título do documento
 Este é um exemplo de como usar Markdown no GitHub.
 
