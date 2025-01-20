@@ -5,7 +5,8 @@
 $sudo apt update
 $sudo apt upgrade
 $sudo apt dist-upgrade
-´´´
+
+
 ## Título do documento
 
 Este é um exemplo de como usar Markdown no GitHub.
