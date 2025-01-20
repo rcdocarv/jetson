@@ -3,8 +3,7 @@
 **Upgrade para versão mais recente do pacotes**
 ```shell
 sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
+sudo apt upgrade && sudo apt dist-upgrade
 ```
 **PIP e jtop**
 ```shell
