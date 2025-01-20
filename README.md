@@ -26,6 +26,13 @@ sudo apt install nvidia-cuda
 sudo apt install nvidia-cuda-toolkit -y
 /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery
 ```
+## Jetson-containers**
+### install the container tools
+git clone https://github.com/dusty-nv/jetson-containers
+bash jetson-containers/install.sh
+
+### automatically pull & run any container
+jetson-containers run $(autotag l4t-pytorch)
 
 https://github.com/dusty-nv/jetson-containers/tree/master/packages/l4t/l4t-pytorch
 ```shell
