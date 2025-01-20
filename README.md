@@ -17,6 +17,7 @@ jtop
 sudo nano ~/.bashrc
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+sudo apt install nvidia-cuda
 source ~/.bashrc
 sudo apt install nvidia-cuda-toolkit -y
 /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery
