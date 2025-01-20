@@ -8,9 +8,18 @@ sudo apt dist-upgrade
 ```
 **PIP e jtop**
 ```shell
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
+jtop
 ```
+
+**OPEN CV + CUDA**
+```shell
+git clone https://github.com/mdegans/nano_build_opencv
+cd nano_build_opencv
+-- nao tem CUDA continuar depois https://www.youtube.com/watch?v=BCNnqTFi-Gs&t=3s
+```
+
 ## Título do documento
 Este é um exemplo de como usar Markdown no GitHub.
 
