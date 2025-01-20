@@ -27,6 +27,11 @@ sudo apt install nvidia-cuda-toolkit -y
 ```
 
 https://github.com/dusty-nv/jetson-containers/tree/master/packages/l4t/l4t-pytorch
+```shell
+sudo apt update
+sudo apt install -y nvidia-container-toolkit
+sudo systemctl restart docker
+```
 
 ~~**OPEN CV + CUDA**~~
 ```shell
