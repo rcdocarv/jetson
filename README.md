@@ -3,7 +3,10 @@
 **Upgrade para versão mais recente do pacotes**
 ```shell
 sudo apt update
+apt install nano
 sudo apt upgrade && sudo apt dist-upgrade
+crontab -e
+@reboot jetson_clocks --fan
 ```
 **PIP e jtop**
 ```shell
