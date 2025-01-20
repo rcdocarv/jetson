@@ -23,7 +23,9 @@ sudo apt install nvidia-cuda-toolkit -y
 /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery
 ```
 
-**OPEN CV + CUDA**
+https://github.com/dusty-nv/jetson-containers/tree/master/packages/l4t/l4t-pytorch
+
+~~**OPEN CV + CUDA**~~
 ```shell
 git clone https://github.com/mdegans/nano_build_opencv
 cd nano_build_opencv
@@ -45,7 +47,7 @@ Este é um exemplo de como usar Markdown no GitHub.
 function hello() {
   console.log('Hello, world!');
 }
-
+```
 
 **Observação:** A aparência exata do texto formatado pode variar ligeiramente dependendo da ferramenta ou plataforma que está sendo usada para renderizar o Markdown.
 
