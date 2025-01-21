@@ -43,6 +43,8 @@ https://github.com/dusty-nv/jetson-containers/tree/master/packages/l4t/l4t-pytor
 ```shell
 jetson-containers run $(autotag l4t-pytorch)
 ```
+
+```shell
 sudo apt update
 sudo apt install -y nvidia-container-toolkit
 sudo systemctl restart docker
