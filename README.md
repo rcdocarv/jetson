@@ -1,5 +1,6 @@
 # jet
 **remover desnecessarios**
+depois desta acção a jetson terá aproximadamente 9.1Gb livres
 ```shell
 sudo apt remove --purge libreoffice -y
 sudo apt remove --purge remmina thunderbird* transmission -y
