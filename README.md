@@ -6,7 +6,6 @@ sudo apt remove --purge remmina thunderbird* transmission -y
 sudo apt remove --purge cheese* smplayer lxmusic -y
 sudo apt remove --purge unity* -y
 sudo apt remove --purge gnome* -y
-sudo apt remove --purge ubuntu-gnome* -y
 sudo apt remove --purge openbox* -y
 sudo apt autoremove --purge -y
 ```
