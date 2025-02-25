@@ -38,7 +38,7 @@ LC_ALL="pt_PT.UTF-8"
 ```
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
-## jtop
+## jtop - jetson TOP
 
 <div align="center">
   <img src="jtop.gif" alt="Logo do Projeto" width="400">
