@@ -69,4 +69,5 @@ pip install torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
 
 pip install torchaudio
 pip install ultralytics
+
 python -c "from ultralytics import YOLO; model = YOLO('yolov8n.pt'); print('Modelo carregado com sucesso')"
