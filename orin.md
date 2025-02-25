@@ -80,7 +80,7 @@ Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão d
 **Do link da wheel interpretamos:** 
  - **v512**       jetpack 5.1.2
  - **torch-2.1**  versão compativel do torch que vai ser instalada
- - 
+ - **cp38**       Versão que compilou Cpython 38 portanto python3.8
 
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
