@@ -62,7 +62,7 @@ conda activate / deactivate
 conda --version
 ```
 
-## Pytorch+CUDA+CUDnn
+## Pytorch+CUDA+cuDNN
 
 
 
