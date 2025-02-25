@@ -1,7 +1,7 @@
 # ORIN
 
 ## Configurar Keyboard
-setxkbmap pt 
+Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos ´setxkbmap pt´ 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
