@@ -17,7 +17,7 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 6.	Ctrl+Alt+del to terminate X <YES>
 
 ## Configurar **Timezone**
-  para 
+Assim o timedate fica defenido no nosso fuso horário. 
 ``` shell
 sudo dpkg-reconfigure tzdata
 timedatectl #para verificar se o timezone foi aplicado
