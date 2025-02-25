@@ -22,6 +22,12 @@ Assim o timedate fica defenido no nosso fuso horário.
 sudo dpkg-reconfigure tzdata
 timedatectl #para verificar se o timezone foi aplicado
 ```
+### Lang
+``` shell
+sudo apt update
+sudo apt install language-pack-pt -y
+sudo apt install language-pack-gnome-pt -y
+```
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
