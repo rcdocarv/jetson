@@ -65,7 +65,7 @@ conda --version
 
 ## Pytorch+CUDA+cuDNN
 [Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
-[Pytorch jetson platforms](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
+[Nvidia !important](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
 
 
 
