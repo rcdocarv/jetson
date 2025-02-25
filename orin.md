@@ -28,7 +28,16 @@ sudo apt update
 sudo apt install language-pack-pt -y
 sudo apt install language-pack-gnome-pt -y
 ```
-
+### locales
+Editamos o ficheiro e substituímos, por o conteúdo abaixo em itálico e depois atualizamos. 
+``` shell
+sudo nano /etc/default/locale
+LANG="pt_PT.UTF-8"
+LANGUAGE="pt_PT:pt:en"
+LANGUAGE="pt_PT:pt"
+LC_ALL="pt_PT.UTF-8"
+sudo dpkg-reconfigure locales
+```
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
