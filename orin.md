@@ -38,6 +38,7 @@ LC_ALL="pt_PT.UTF-8"
 ```
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
+## jtop
 
 
 
