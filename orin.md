@@ -2,6 +2,13 @@
 
 ## Configurar Keyboard
 *Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos* `setxkbmap pt` 
+``` shell
+sudo apt update && sudo apt install nano
+sudo nano /etc/default/keyboard
+XKBLAYOUT="pt"
+sudo dpkg-reconfigure keyboard-configuration
+
+
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
