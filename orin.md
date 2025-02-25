@@ -7,7 +7,7 @@ sudo apt update && sudo apt install nano
 sudo nano /etc/default/keyboard
 XKBLAYOUT="pt"
 sudo dpkg-reconfigure keyboard-configuration
-
+```
 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
