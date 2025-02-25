@@ -16,7 +16,7 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 5.	Right Alt (AltGr)
 6.	Ctrl+Alt+del to terminate X <YES>
 
-
+## Configurar Timezone
 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
