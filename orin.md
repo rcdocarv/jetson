@@ -8,7 +8,8 @@ sudo nano /etc/default/keyboard
 XKBLAYOUT="pt"
 sudo dpkg-reconfigure keyboard-configuration
 ```
-*1.	Generic 105-key PC (intl.)*
+Depois de correr o ultimo comando precisará de escolher as seguintes opções, nas janelas subsequentes.
+1.	Generic 105-key PC (intl.)*
 2.	Portuguese
 3.	Portuguese – Portuguese (no dead keys)
 4.	The Default for the keyboard layout
