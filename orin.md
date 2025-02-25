@@ -64,7 +64,7 @@ conda --version
 ```
 
 ## Pytorch+CUDA+cuDNN
-
+[Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
 
 
 
