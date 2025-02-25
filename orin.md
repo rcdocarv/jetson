@@ -68,7 +68,9 @@ conda --version
 <div align="center">
   <img src="jtop_zedBox.png" alt="Logo do Projeto" width="650">
 </div>
+
 **Documentation Nvidia**
+
 Links da documentação da Nvidia [Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html) 
 
 Uma alma caida do ceu que detalhou toda a compatiblidade de versões [Nvidia Soul](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
