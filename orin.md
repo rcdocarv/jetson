@@ -64,6 +64,10 @@ conda --version
 ```
 
 ## Pytorch+CUDA+cuDNN
+
+<div align="center">
+  <img src="jtop.gif" alt="Logo do Projeto" width="450">
+</div>
 [Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
 
 [Nvidia !important](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
