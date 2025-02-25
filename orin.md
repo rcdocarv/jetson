@@ -53,13 +53,14 @@ jetson_release
 ```
 ## conda
 
-
+``` shell
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 chmod +x Miniforge3-Linux-aarch64.sh
 ./Miniforge3-Linux-aarch64.sh
 source ~/miniforge3/bin/activate
 conda activate / deactivate
-conda --version 
+conda --version
+```
 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
