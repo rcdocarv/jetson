@@ -16,13 +16,13 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 5.	Right Alt (AltGr)
 6.	Ctrl+Alt+del to terminate X <YES>
 
-### Configurar **Timezone**
+### timezone
 Assim o timedate fica defenido no nosso fuso horário. 
 ``` shell
 sudo dpkg-reconfigure tzdata
 timedatectl #para verificar se o timezone foi aplicado
 ```
-### Lang
+### lang
 ``` shell
 sudo apt update
 sudo apt install language-pack-pt -y
