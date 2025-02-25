@@ -53,6 +53,7 @@ jetson_release
 ```
 ## conda
 O conda será extramente util para criar dversos ambientes para por exemplo instalar o pytorch especifico para esta SoM sem necessidade de resolver conflitos.
+Esta instalação corre especifica para aarch64, demora tem **manba**, **miniforge** (~4Gb).
 ``` shell
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 chmod +x Miniforge3-Linux-aarch64.sh
