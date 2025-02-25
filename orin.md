@@ -39,6 +39,9 @@ LC_ALL="pt_PT.UTF-8"
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
 ## jtop
+<div align="center">
+  <img src="jtop.gif" alt="Logo do Projeto" width="400">
+</div>
 ``` shell
 sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
@@ -47,9 +50,7 @@ jtop
 jetson_release
 ```
 
-<div align="center">
-  <img src="jtop.gif" alt="Logo do Projeto" width="400">
-</div>
+
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
