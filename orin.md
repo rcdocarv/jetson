@@ -1,6 +1,6 @@
 # ORIN
 
-## Configurar Keyboard
+## Configurar **Keyboard**
 *Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos* `setxkbmap pt` 
 ``` shell
 sudo apt update && sudo apt install nano
@@ -16,8 +16,11 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 5.	Right Alt (AltGr)
 6.	Ctrl+Alt+del to terminate X <YES>
 
-## Configurar Timezone
-
+## Configurar **Timezone**
+``` shell
+sudo dpkg-reconfigure tzdata
+timedatectl (para verificar se o timezone foi aplicado)
+```
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
