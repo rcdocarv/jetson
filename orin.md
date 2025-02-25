@@ -1,6 +1,6 @@
 # ORIN
 ## Configurar Keyboard Timezone Lang locale
-### Keyboard
+### keyboard
 *Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos* `setxkbmap pt` 
 ``` shell
 sudo apt update && sudo apt install nano
