@@ -8,6 +8,15 @@ sudo nano /etc/default/keyboard
 XKBLAYOUT="pt"
 sudo dpkg-reconfigure keyboard-configuration
 ```
+*
+•	Generic 105-key PC (intl.)
+•	Portuguese
+•	Portuguese – Portuguese (no dead keys)
+•	The Default for the keyboard layout
+•	Right Alt (AltGr)
+•	Ctrl+Alt+del to terminate X <YES>
+*
+
 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
