@@ -39,8 +39,13 @@ LC_ALL="pt_PT.UTF-8"
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
 ## jtop
-
-
+``` shell
+sudo apt install python3-pip -y
+sudo pip3 install -U jetson-stats
+sudo systemctl restart jtop.service
+jtop
+jetson_release
+```
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
