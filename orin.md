@@ -47,6 +47,9 @@ jtop
 jetson_release
 ```
 
+<div align="center">
+  <img src="assets/logo.png" alt="Logo do Projeto" width="300">
+</div>
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
