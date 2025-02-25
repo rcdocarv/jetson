@@ -29,7 +29,7 @@ sudo apt install language-pack-pt -y
 sudo apt install language-pack-gnome-pt -y
 ```
 ### locales
-Editamos o ficheiro e substituímos, por o conteúdo abaixo em itálico e depois atualizamos. 
+Editamos o ficheiro  `sudo nano /etc/default/locale` e substituímos, por o conteúdo abaixo em itálico e depois atualizamos. 
 ``` shell
 sudo nano /etc/default/locale
 LANG="pt_PT.UTF-8"
