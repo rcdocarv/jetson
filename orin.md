@@ -1,6 +1,6 @@
 # ORIN
 
-## Confiurar Keyboard
+## Configurar Keyboard
 setxkbmap pt 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
