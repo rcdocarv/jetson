@@ -39,7 +39,7 @@ LC_ALL="pt_PT.UTF-8"
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
 ## jtop - jetson TOP
-
+O **jtop**
 <div align="center">
   <img src="jtop.gif" alt="Logo do Projeto" width="450">
 </div>
@@ -61,6 +61,7 @@ source ~/miniforge3/bin/activate
 conda activate / deactivate
 conda --version
 ```
+
 
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
