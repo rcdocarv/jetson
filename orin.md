@@ -1,6 +1,6 @@
 # ORIN
-
-## Configurar **Keyboard**
+## Configurar Keyboard Timezone Lang locale
+### Keyboard
 *Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos* `setxkbmap pt` 
 ``` shell
 sudo apt update && sudo apt install nano
@@ -16,7 +16,7 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 5.	Right Alt (AltGr)
 6.	Ctrl+Alt+del to terminate X <YES>
 
-## Configurar **Timezone**
+### Configurar **Timezone**
 Assim o timedate fica defenido no nosso fuso horário. 
 ``` shell
 sudo dpkg-reconfigure tzdata
