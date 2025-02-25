@@ -8,14 +8,13 @@ sudo nano /etc/default/keyboard
 XKBLAYOUT="pt"
 sudo dpkg-reconfigure keyboard-configuration
 ```
-*
 1.	Generic 105-key PC (intl.)
 2.	Portuguese
 3.	Portuguese – Portuguese (no dead keys)
 4.	The Default for the keyboard layout
 5.	Right Alt (AltGr)
 6.	Ctrl+Alt+del to terminate X <YES>
-*
+
 
 
 
