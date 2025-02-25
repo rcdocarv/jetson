@@ -48,7 +48,7 @@ jetson_release
 ```
 
 <div align="center">
-  <img src="jtop.gif" alt="Logo do Projeto" width="300">
+  <img src="jtop.gif" alt="Logo do Projeto" width="400">
 </div>
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
