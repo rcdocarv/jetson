@@ -31,7 +31,6 @@ sudo apt install language-pack-gnome-pt -y
 ### locales
 Editamos o ficheiro `sudo nano /etc/default/locale` e substituímos pelo conteudo abaixo. 
 ``` shell
-sudo nano /etc/default/locale
 LANG="pt_PT.UTF-8"
 LANGUAGE="pt_PT:pt:en"
 LANGUAGE="pt_PT:pt"
