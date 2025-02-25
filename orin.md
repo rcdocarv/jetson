@@ -41,7 +41,7 @@ Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 ## jtop - jetson TOP
 
 <div align="center">
-  <img src="jtop.gif" alt="Logo do Projeto" width="400">
+  <img src="jtop.gif" alt="Logo do Projeto" width="450">
 </div>
 
 ``` shell
