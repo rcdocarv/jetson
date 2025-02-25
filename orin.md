@@ -39,9 +39,11 @@ LC_ALL="pt_PT.UTF-8"
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
 ## jtop
+
 <div align="center">
   <img src="jtop.gif" alt="Logo do Projeto" width="400">
 </div>
+
 ``` shell
 sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
