@@ -51,7 +51,7 @@ sudo systemctl restart jtop.service
 jtop
 jetson_release
 ```
-
+##
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
