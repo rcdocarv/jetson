@@ -39,7 +39,7 @@ LC_ALL="pt_PT.UTF-8"
 Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 
 ## jtop - jetson TOP
-O **jtop** permite-nos, 
+O **jtop** permite-nos, verificar se o CUDA ou cuDNN estão correctamente instalados no sistema assim como versões de jetpack, etc.
 <div align="center">
   <img src="jtop.gif" alt="Logo do Projeto" width="450">
 </div>
