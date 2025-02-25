@@ -75,9 +75,9 @@ Links da documentação da Nvidia [Pytorch jetson platforms](https://docs.nvidia
 
 Uma alma caida do ceu que detalhou toda a compatiblidade de versões [Nvidia Soul](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
 
-Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1 
+Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1. Isso leva-nos para uma wheel *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*
 
-Isso leva-nos para uma wheel *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*
+
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
