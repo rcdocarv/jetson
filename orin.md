@@ -19,7 +19,7 @@ Depois de correr o ultimo comando precisará de escolher as seguintes opções, 
 ## Configurar **Timezone**
 ``` shell
 sudo dpkg-reconfigure tzdata
-timedatectl (para verificar se o timezone foi aplicado)
+timedatectl #para verificar se o timezone foi aplicado
 ```
 
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
