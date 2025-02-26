@@ -103,7 +103,9 @@ Se encurtarmos o link da wheel atrás https://developer.download.nvidia.com/comp
 </div>
 
 
-Portanto se alterar-mos no link **v** referente ao jetpack,ele da-nos as versões de pytorch correspondentes. 
+Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511
+
+
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
