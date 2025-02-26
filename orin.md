@@ -95,10 +95,8 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
  - **v511**       jetpack 5.1.1 instaldo no sistema operativo da SoM.
  - **nv23.03**    Versão Nvidia tem haver com compilações linux for tegra (l4t), nvcc entre outros.
  - torch-x.x  **Precisamos determinar a versão suportada**, tendo em consideração as versões anteriores de Jetpack e Nvidia, teremos uma versão suportada de pytorch.
- - cpxx-cpxx  **Precisamos determinar a versão suportada**, cp refere-se implementação com recurso a cPython! O cpxx-cpxx, diz repeito á complição e compatiblidade. Assim o **se tivermos cp38-cp39**, o primeiro cp38 significa que o ABI (Application Binary Interface) do python ou seja a versão que integra a parte em c/c++ e restantes libs foi feita com uma versão de cPython equivalente ao Python3.8. Já o segundo cp o cp38
+ - cpxx-cpyy  **Precisamos determinar a versão suportada**, cp refere-se implementação com recurso a cPython! O cpxx-cpxx, diz repeito á complição e compatiblidade. Assim imagenmos que temos **cp38-cp39**, o primeiro cp38 significa que o ABI (Application Binary Interface) do python ou seja a versão que integra e compila a parte em c/c++ e restantes libs foi feita com uma versão de cPython equivalente ao Python3.8. Já o segundo o cp39 indica refe-se ao build do Python propriamente dito, seja diz-nos que este pacote iria rodar em python 3.9
  
- -     como exemplo cp38-cp38 ao ABI (Application Binary Interface) do Python ou 
-
 Se encurtarmos o link da wheel atrás https://developer.download.nvidia.com/compute/redist/jp/ temos uma listagem de directorio por Nvidia Jetpack.
 <div align="center">
   <img src="nv_jetpacks.png" alt="Logo do Projeto" width="450">
