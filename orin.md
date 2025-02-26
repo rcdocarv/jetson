@@ -99,7 +99,7 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
 
 Se encurtarmos o link da wheel atrás temos https://developer.download.nvidia.com/compute/redist/jp/
 <div align="center">
-  <img src="nv_jetpacks.png" alt="Logo do Projeto" width="650">
+  <img src="nv_jetpacks.png" alt="Logo do Projeto" width="450">
 </div>
 
 
