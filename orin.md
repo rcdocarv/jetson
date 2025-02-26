@@ -64,7 +64,7 @@ conda --version
 ```
 
 ## Pytorch+CUDA+cuDNN
-
+### Determinação das versões
 <div align="center">
   <img src="jtop_zedBox.png" alt="Logo do Projeto" width="650">
 </div>
@@ -90,7 +90,7 @@ $ head -n 1 /etc/nv_tegra_release
 ```
 Portanto segunda a saida do comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*
 
-## Descobrir a nossa wheel compativel de pytorch
+### Descobrir a nossa wheel compativel de pytorch
 **Dos comandos atras sabemos** 
  - **v511**       jetpack 5.1.1
  - **nv23.03**    Versão Nvidia
