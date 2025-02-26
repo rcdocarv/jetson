@@ -117,12 +117,13 @@ Pela nossa wheel que determina-mos atrás sabeos que a versão de python é a 3.
 conda create --name py38Cuda python=3.8
 conda activate py38Cuda
 ```
-E depois baixa-mos e instala-mos a wheel, eventualmente haverá muitas dependência que irá pedir para instalar, se houver necessidade de instalar algum pacote manualmente dê sempre preferencia a `conda install numpy`, ao invés do pip.
+E depois baixamos e instalamos a wheel, eventualmente haverá muitas dependência que irá pedir para instalar, se houver necessidade de instalar algum pacote manualmente dê sempre preferencia a `conda install numpy`, ao invés do pip.
 ``` shell
 wget https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 pip install torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
 Entretanto vamos precisar do torchVision que é o modulo de pytorch responsavel pela parte visual de processamento de imagem e video, se consultamos o link atrás [Nvidia Soul](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048), verificamos que para a nossa versão de PyTorch v2.0 - torchvision v0.15.1.
+
 ##
 
 instalar torchvision
