@@ -65,7 +65,7 @@ conda --version
 
 ## Pytorch+CUDA+cuDNN
 Este passo é vital para termos CUDA e cuDNN suportado em python para o pytorch, caso contrário estaremos apenas a usar o CPU com uma perda de rendimento gigantesca!
-### Documentation Nvidia
+### Documentação Nvidia
 
 Links da documentação da Nvidia [Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html) 
 
@@ -111,10 +111,13 @@ Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depo
 **Analisando as Wheels**, a pimeira coisa  fazer é verificar a versão nv, e verificamos que existe a nosssa nv23.03, na opção 3.
 
 ### Instalar a Whell Pytorch+CUDA+cuDNN
-
-##
-https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
+Então vamos baixar e instalar a Wheel.
+``` shell
+$ wget https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
+$ pip install torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
+##
+
 instalar torchvision
 wget https://developer.download.nvidia.com/compute/redist/jp/v51/torchvision/torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
 pip install torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
