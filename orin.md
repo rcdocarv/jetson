@@ -77,6 +77,12 @@ Uma alma caida do ceu que detalhou toda a compatiblidade de versões [Nvidia Sou
 
 Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1. Isso leva-nos para uma wheel de python *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*
 
+Também podemos verificar o Jetpack pelo comando: 
+``` shell
+# dpkg-query --show nvidia-jetpack
+$ nvidia-jetpack	5.1.1-b56
+```
+
 **Do link da wheel interpretamos:** 
  - **v512**       jetpack 5.1.2
  - **torch-2.1**  versão compativel do torch que vai ser instalada
