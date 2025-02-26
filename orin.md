@@ -94,8 +94,8 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
 **Dos comandos atras sabemos** 
  - **v511**       jetpack 5.1.1
  - **nv23.03**    Versão Nvidia
- - **torch-2.1**  Precisamos determinar a versão suportada
- - **cp38**       Precisamos determinar a versão suportada
+ - torch-x.x  **Precisamos determinar a versão suportada**
+ - cp38**     **Precisamos determinar a versão suportada**
 
 Por estas informações temos criar um enviroment de conda com o python3.8 para termos torch com CUDA
 
