@@ -89,8 +89,10 @@ $ head -n 1 /etc/nv_tegra_release
 > R35 (release), REVISION: 3.1, GCID: 32827747, BOARD: t186ref, EABI: aarch64, DATE: Sun Mar 19 15:19:21 UTC 2023
 ```
 Portanto segunda a saida do comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*
-**Do link da wheel interpretamos:** 
- - **v512**       jetpack 5.1.2
+
+## Descobrir a nossa wheel compativel de pytorch
+**Dos comandos atras sabemos** 
+ - **v511**       jetpack 5.1.1
  - **nv23.03**    Versão Nvidia
  - **torch-2.1**  Precisamos determinar a versão suportada
  - **cp38**       Precisamos determinar a versão suportada
