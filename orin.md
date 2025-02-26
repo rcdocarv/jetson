@@ -71,7 +71,7 @@ Links da documentação da Nvidia [Pytorch jetson platforms](https://docs.nvidia
 
 Uma alma caida do ceu que detalhou toda a compatiblidade de versões [Nvidia Soul](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
 
-Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1. Pelo ultimo link isso leva-nos para uma wheel de python *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*, no entanto a nossa versao não é a v512 mas sim a v511 (v5.1.1) como vemos na saida do `jtop` abaixo.
+Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1. Pelo ultimo link isso leva-nos para uma wheel de python *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*, no entanto a nossa versao não é a v512 mas sim a v511 (v5.1.1) como vemos na saida do comando `jtop` abaixo.
 
 <div align="center">
   <img src="jtop_zedBox.png" alt="Logo do Projeto" width="650">
@@ -88,7 +88,7 @@ Para verificar o nv:
 $ head -n 1 /etc/nv_tegra_release
 > R35 (release), REVISION: 3.1, GCID: 32827747, BOARD: t186ref, EABI: aarch64, DATE: Sun Mar 19 15:19:21 UTC 2023
 ```
-Portanto segunda a saida do comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*
+Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*, ou seja é um Nvidia version de 2023, março!
 
 ### Descobrir a nossa wheel compativel de pytorch
 **Dos comandos atras sabemos** 
