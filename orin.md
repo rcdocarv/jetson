@@ -82,11 +82,13 @@ Também podemos verificar o Jetpack pelo comando:
 $ dpkg-query --show nvidia-jetpack
 > nvidia-jetpack	5.1.1-b56
 ```
-``` shell
-head -n 1 /etc/nv_tegra_release
-R35 (release), REVISION: 3.1, GCID: 32827747, BOARD: t186ref, EABI: aarch64, DATE: Sun Mar 19 15:19:21 UTC 2023
-```
 
+Para verificar o nv:
+``` shell
+$ head -n 1 /etc/nv_tegra_release
+> R35 (release), REVISION: 3.1, GCID: 32827747, BOARD: t186ref, EABI: aarch64, DATE: Sun Mar 19 15:19:21 UTC 2023
+```
+Portanto segunda a saida do comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*
 **Do link da wheel interpretamos:** 
  - **v512**       jetpack 5.1.2
  - **torch-2.1**  versão compativel do torch que vai ser instalada
