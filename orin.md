@@ -79,8 +79,8 @@ Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão d
 
 Também podemos verificar o Jetpack pelo comando: 
 ``` shell
-# dpkg-query --show nvidia-jetpack
-$ nvidia-jetpack	5.1.1-b56
+$ dpkg-query --show nvidia-jetpack
+> nvidia-jetpack	5.1.1-b56
 ```
 
 **Do link da wheel interpretamos:** 
