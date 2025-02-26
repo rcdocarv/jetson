@@ -64,7 +64,7 @@ conda --version
 ```
 
 ## Pytorch+CUDA+cuDNN
-
+Este passo é vital para termos CUDA e cuDNN suportado em python para o pytorch, caso contrário estaremos apenas a usar o CPU com uma perda de rendimento gigantesca!
 ### Documentation Nvidia
 
 Links da documentação da Nvidia [Pytorch jetson platforms](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html) 
