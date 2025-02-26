@@ -102,17 +102,14 @@ Se encurtarmos o link da wheel atrás https://developer.download.nvidia.com/comp
   <img src="nv_jetpacks.png" alt="Logo do Projeto" width="350">
 </div>
 
+Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depois abrirá outra listagem de directorio onde iremos escolher de pytorch, mas nas wheels que vão abrir nehuma tem o nv23.03 então a solução é no link modificar o v511 para v51 (ou jetpack v5.1.0), ao entrar nesse link (https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/), temos as seguintes wheels disponiveis.
 
-Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511
+ 1. https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
+ 2.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
+ 3.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 
 
-https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
-https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
-https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ##
-
-
-  
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
 instalar torchvision
