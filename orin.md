@@ -108,7 +108,7 @@ Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depo
  2.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
  3.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 
-
+**Analisando as Wheels**, a pimeira coisa  fazer é verificar a versão nv, e verificamos que existe a nosssa nv23.03!
 ##
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
