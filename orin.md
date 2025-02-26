@@ -91,8 +91,9 @@ $ head -n 1 /etc/nv_tegra_release
 Portanto segunda a saida do comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*
 **Do link da wheel interpretamos:** 
  - **v512**       jetpack 5.1.2
- - **torch-2.1**  versão compativel do torch que vai ser instalada
- - **cp38**       Versão que compilou Cpython 38 portanto python3.8
+ - **nv23.03**    Versão Nvidia
+ - **torch-2.1**  Precisamos determinar a versão suportada
+ - **cp38**       Precisamos determinar a versão suportada
 
 Por estas informações temos criar um enviroment de conda com o python3.8 para termos torch com CUDA
 
