@@ -92,7 +92,7 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
 
 ### Descobrir a nossa wheel compativel de pytorch
 **Dos comandos atras e da wheel** *torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl* **sabemos:** 
- - **v511**       jetpack 5.1.1 instaldo no sistema operativo da SoM.
+ - **v511**       jetpack 5.1.1 instalado no sistema operativo da SoM.
  - **nv23.03**    Versão Nvidia tem haver com compilações linux for tegra (l4t), nvcc entre outros.
  - torch-x.x  **Precisamos determinar a versão suportada**, tendo em consideração as versões anteriores de Jetpack e Nvidia, teremos uma versão suportada de pytorch.
  - cpxx-cpyy  **Precisamos determinar a versão suportada**, cp refere-se implementação com recurso a cPython! O cpxx-cpxx, diz repeito á complição e compatiblidade. Assim imagenmos que temos **cp38-cp39**, o primeiro cp38 significa que o ABI (Application Binary Interface) do python ou seja a versão que integra e compila a parte em c/c++ e restantes libs foi feita com uma versão de cPython equivalente ao Python3.8. Já o segundo o cp39 indica refe-se ao build do Python propriamente dito, seja diz-nos que este pacote iria rodar em python 3.9. É determinante para criar o ambiente conda.
@@ -102,13 +102,16 @@ Se encurtarmos o link da wheel atrás https://developer.download.nvidia.com/comp
   <img src="nv_jetpacks.png" alt="Logo do Projeto" width="350">
 </div>
 
-Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depois abrirá outra listagem de directorio onde iremos escolher de pytorch, mas nas wheels que vão abrir nehuma tem o nv23.03 então a solução é no link modificar o v511 para v51 (ou jetpack v5.1.0), ao entrar nesse link (https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/), temos as seguintes wheels disponiveis.
+Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depois abrirá outra listagem de directorio onde iremos escolher de pytorch, mas nas wheels que vão abrir nenhuma tem o nv23.03 então a solução é no link modificar o v511 para v51 (ou jetpack v5.1.0), ao entrar nesse link (https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/), temos as seguintes wheels disponiveis.
 
  1. https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
  2.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
  3.  https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 
-**Analisando as Wheels**, a pimeira coisa  fazer é verificar a versão nv, e verificamos que existe a nosssa nv23.03!
+**Analisando as Wheels**, a pimeira coisa  fazer é verificar a versão nv, e verificamos que existe a nosssa nv23.03, na opção 3.
+
+### Instalar a Whell Pytorch+CUDA+cuDNN
+
 ##
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
