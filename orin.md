@@ -98,6 +98,9 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
  - cpxx-cpxx  **Precisamos determinar a versão suportada**
 
 Se encurtarmos o link da wheel atrás temos https://developer.download.nvidia.com/compute/redist/jp/
+<div align="center">
+  <img src="nv_jetpacks.png" alt="Logo do Projeto" width="650">
+</div>
 
 
 Portanto se alterar-mos no link **v** referente ao jetpack,ele da-nos as versões de pytorch correspondentes. 
