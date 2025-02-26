@@ -91,7 +91,7 @@ $ head -n 1 /etc/nv_tegra_release
 Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 corresponde ao nv23.03 *(nvYY.MM)*, ou seja é um Nvidia version de 2023, março!
 
 ### Descobrir a nossa wheel compativel de pytorch
-**Dos comandos atras e da wheel** *pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl* **sabemos:** 
+**Dos comandos atras e da wheel** *torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl* **sabemos:** 
  - **v511**       jetpack 5.1.1 instaldo no sistema operativo da SoM.
  - **nv23.03**    Versão Nvidia tem haver com compilações linux for tegra (l4t), nvcc entre outros.
  - torch-x.x  **Precisamos determinar a versão suportada**, tendo em consideração as versões anteriores de Jetpack e Nvidia, teremos uma versão suportada de pytorch.
