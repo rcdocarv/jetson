@@ -97,7 +97,8 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
  - torch-x.x  **Precisamos determinar a versão suportada**
  - cpxx-cpxx  **Precisamos determinar a versão suportada**
 
-Por estas informações temos criar um enviroment de conda com o python3.8 para termos torch com CUDA
+Se encurtarmos o link da wheel atrás temos https://developer.download.nvidia.com/compute/redist/jp/
+
 
 Portanto se alterar-mos no link **v** referente ao jetpack,ele da-nos as versões de pytorch correspondentes. 
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.01-cp38-cp38-linux_aarch64.whl
@@ -105,11 +106,7 @@ https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ##
 
-*torch 2.5.1
-*cuda 11.5.315
-*cp 3.12
-instalar torch 
-``` shell
+
   
 https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
