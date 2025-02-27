@@ -41,7 +41,7 @@ Depois é so correr `sudo dpkg-reconfigure locales` atualizar os locales.
 ## jtop - jetson TOP
 O **jtop** permite-nos, verificar se o CUDA ou cuDNN estão correctamente instalados no sistema assim como versões de jetpack, ou utlização de recursos da Orin NX.
 <div align="center">
-  <img src="jtop.gif" alt="Logo do Projeto" width="450">
+  <img src="img/jtop.gif" alt="Logo do Projeto" width="450">
 </div>
 
 ``` shell
@@ -74,7 +74,7 @@ Uma alma caida do ceu que detalhou toda a compatiblidade de versões [Nvidia Sou
 Entrando no ultimo link, verificamos pelo comando **jtop** que a nossa versão de jetpack é 5.1.1. Pelo ultimo link isso leva-nos para uma wheel de python *https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl*, no entanto a nossa versao não é a v512 mas sim a v511 (v5.1.1) como vemos na saida do comando `jtop` abaixo.
 
 <div align="center">
-  <img src="jtop_zedBox.png" alt="Logo do Projeto" width="650">
+  <img src="img/jtop_zedBox.png" alt="Logo do Projeto" width="650">
 </div>
 
 Também podemos verificar o Jetpack pelo comando: 
@@ -99,7 +99,7 @@ Portanto segundo a saida do ultimo comando a nossa versão é de março de 2023 
  
 Se encurtarmos o link da wheel atrás https://developer.download.nvidia.com/compute/redist/jp/ temos uma listagem de directorio por Nvidia Jetpack.
 <div align="center">
-  <img src="nv_jetpacks.png" alt="Logo do Projeto" width="350">
+  <img src="img/nv_jetpacks.png" alt="Logo do Projeto" width="350">
 </div>
 
 Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depois abrirá outra listagem de directorio onde iremos escolher de pytorch, mas nas wheels que vão abrir nenhuma tem o nv23.03 então a solução é no link modificar o v511 para v51 (ou jetpack v5.1.0), ao entrar nesse link (https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/), temos as seguintes wheels disponiveis.
