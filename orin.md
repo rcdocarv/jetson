@@ -145,5 +145,10 @@ e por fim fim verificar as versões instaladas.
 $ python -c "import torchvision; print(torchvision.__version__)"
 > 0.15.0
 ```
+Também podemos consultar o detalhe dos pacotes instalados:
+``` shell
+pip show torch
+pip show torchvision
+```
 ## Verificação da deteção do device CUDA e acelaração de GPU
 
