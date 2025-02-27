@@ -152,3 +152,25 @@ pip show torchvision
 ```
 ## Verificação da deteção do device CUDA e acelaração de GPU
 
+Neste Git existe o validate_CUDA.py, se tudo estiver bem deverá ver uma saida no terminal como o exemplo abaixo:
+```shell
+VERIFICA SE O CUDA ESTA DISPONIVEL NO TORCH
+CUDA disponível: True
+Versão do CUDA: 11.4
+Número de dispositivos CUDA: 1
+Dispositivo CUDA atual: 0
+Nome do dispositivo CUDA: Orin
+
+VERIFICA SE O CuDNN ESTA HABILITADO
+CuDNN disponível: True
+CuDNN habilitado: True
+Versão do CuDNN: 8600
+
+CONFIRMA SE O TORCHVISION USA O CUDA
+Modelo movido para o CUDA
+Inferência concluída com sucesso!
+
+VERIFICA AS VERSOES DE TORCH E torchvision
+PyTorch versão: 2.1.0a0+41361538.nv23.06
+torchvision versão: 0.16.1
+```
