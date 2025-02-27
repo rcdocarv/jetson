@@ -112,7 +112,7 @@ Sabemos que a nossa versão de jetpack é a v5.1.1  vamos clicamos em v511, depo
 
 ### Instalar a Whell Pytorch+CUDA+cuDNN
 
-Pela nossa wheel que determina-mos atrás sabemosque a versão de python é a 3.8 (cp38-cp38), então vamos criar um enviroment de conda para a versão python3.8.
+Pela nossa wheel que determina-mos atrás sabemos que a versão de python é a 3.8 (cp38-cp38), então vamos criar um enviroment de conda para a versão python3.8.
 ```shel
 conda create --name py38Cuda python=3.8
 conda activate py38Cuda
