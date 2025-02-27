@@ -124,6 +124,7 @@ pip install torch-2.0.0a0+8aa34602.nv23.03-cp38-cp38-linux_aarch64.whl
 ```
 Entretanto vamos precisar do torchVision que é o modulo de pytorch responsavel pela parte visual de processamento de imagem e video, se consultamos o link atrás [Nvidia Soul](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048), verificamos que para a nossa versão de PyTorch v2.0 - torchvision v0.15.1.
 
+Também podemos verificar no git do pytorch [pytorch](https://github.com/pytorch/vision?tab=readme-ov-file)
 ##
 
 instalar torchvision
