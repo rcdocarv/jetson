@@ -152,7 +152,7 @@ pip show torchvision
 ```
 ## Verificação da deteção do device CUDA e acelaração de GPU
 
-Neste Git existe o validate_CUDA.py, se tudo estiver bem deverá ver uma saida no terminal como o exemplo abaixo:
+Neste Git existe o [validate_CUDA.py](validate_CUDA.py), se tudo estiver bem deverá ver uma saida no terminal como o exemplo abaixo:
 ```shell
 VERIFICA SE O CUDA ESTA DISPONIVEL NO TORCH
 CUDA disponível: True
