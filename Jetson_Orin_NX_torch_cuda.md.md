@@ -1,4 +1,4 @@
-# ORIN
+# JETSON ORIN NX - CUDA + Pytorch
 ## Configurar Keyboard Timezone Lang locale
 ### keyboard
 *Se quiser corrigir o layout do tecldo para facilitar a entrada dos proximos comandos* `setxkbmap pt` 
