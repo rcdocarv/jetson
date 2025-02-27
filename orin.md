@@ -131,13 +131,17 @@ conda install -c pytorch torchvision=0.16.1
 ```
 Alternativamente podemos usar o pip:
 ``` shell
-pip install torchvision==0.16.1
+pip install torchvision==0.15.0
 ```
-
-##
-
-instalar torchvision
-wget https://developer.download.nvidia.com/compute/redist/jp/v51/torchvision/torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
-pip install torchvision-0.15.0a0+56c67ea.nv23.03-cp38-cp38-linux_aarch64.whl
-
-pip install torchaudio
+Ou diretamente do repositorio, baixando o codigo fonte e compilar:
+```shell
+git clone https://github.com/pytorch/vision.git
+cd vision
+git checkout v0.15.0
+python setup.py install
+```
+e por fim fim verificar as versões instaladas.
+``` shell
+$ python -c "import torchvision; print(torchvision.__version__)"
+> 0.15.0
+```
