@@ -17,5 +17,6 @@ Então na página dos [SDK Downloads](https://www.stereolabs.com/en-pt/developer
 
 Depois damos permissão de execução e instalamos.
 ``` shell
-
+chmox +x ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
+./ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
 ```
