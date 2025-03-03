@@ -45,4 +45,4 @@ Seguindo o link da página dos drivers encontramos para a nossa Jetson Orin NX o
   <img src="./img/Zedx_drivers.jpg" width="650" />
 </div>
 
-No fez-se o download da versão para o Jetpack 5.1.1 para Jetson Orin NX 16Gb ou `wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/utils/drivers/ZEDX/1.2.2/R35.3/stereolabs-zedbox-onx16_1.2.2-LI-MAX96712-ALL-ZEDBOX-L4T35.3.1_arm64.deb´
+No fez-se o download da versão para o Jetpack 5.1.1 para Jetson Orin NX 16Gb ou `wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/utils/drivers/ZEDX/1.2.2/R35.3/stereolabs-zedbox-onx16_1.2.2-LI-MAX96712-ALL-ZEDBOX-L4T35.3.1_arm64.deb`
