@@ -21,4 +21,4 @@ sudo apt install zstd
 chmox +x ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
 ./ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
 ```
-Depois é necessário ir a `cd /usr/local/zed` e correr no ambiente python pretendido conda ou não `pip install pyzed-4.2-cp38-cp38-linux_aarch64.whl`.
+Depois é necessário ir a `cd /usr/local/zed` e correr no ambiente python pretendido conda ou não `pip install pyzed-4.2-cp38-cp38-linux_aarch64.whl`. Para que ao fazer `import pyzed.sl as sl` não dê erro!
