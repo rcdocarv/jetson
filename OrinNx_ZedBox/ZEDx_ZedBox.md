@@ -41,5 +41,5 @@ Nesta página [Zed Camera Drivers](https://www.stereolabs.com/en-pt/developers/d
 
 Seguindo o link da página dos drivers encontramos para a nossa Jetson Orin NX o driver da Camera ZEDx para o Jetpack correspondente, conforme a imagem abaixo.
 <div witdh="100%">
-  <img src="./img/Zedx_drivers.jpg" width="650" />
+  <img src="./img/Zedx_drivers.jpg" width="650" style="display: block; margin: 0 auto;"/>
 </div>
