@@ -49,5 +49,5 @@ No fez-se o download da versão para o Jetpack 5.1.1 para Jetson Orin NX 16Gb ou
 
 Depois Instalamos: 
 ```shell
-sudo dpkg -i stereolabs-zedx_X.X.X-ZED-LINK-YYYY-L4TZZ.Z_arm64.deb
+sudo dpkg -i stereolabs-zedbox-onx16_1.2.2-LI-MAX96712-ALL-ZEDBOX-L4T35.3.1_arm64.deb
 ```
