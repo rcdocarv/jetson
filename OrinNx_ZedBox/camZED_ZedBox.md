@@ -1,5 +1,12 @@
 # Instalação da ZED2i e ZEDx na zed box (Jetson Orin NX)
 ## ZED2i
+Antes de iniciar vamos instalar algumas dependências.
+```shell
+python -m pip install cython numpy opencv-python pyopengl
+python3 -m pip install cython
+python3 -m pip install numpy
+```
+
 Para instalação do setereolabs SDK  para dar suporte á camera vamos seguir este link da [Setereolabs](https://www-stereolabs-com.translate.goog/docs/get-started-with-zed-box-orin-nx/installation?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp)
 
 Portanto sabe qual a versão do jetpack
@@ -26,3 +33,5 @@ Depois é necessário ir a `cd /usr/local/zed` e correr no ambiente python prete
 No fim pode testar a zed 2i com este programa [zed2i_orinNX.py](./zed2i_orinNX.py)
 
 # ZEDx
+Para esta instalação deve incialmente fazer os passos do ponto anterior
+
