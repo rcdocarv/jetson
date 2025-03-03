@@ -51,3 +51,10 @@ Depois Instalamos:
 ```shell
 sudo dpkg -i stereolabs-zedbox-onx16_1.2.2-LI-MAX96712-ALL-ZEDBOX-L4T35.3.1_arm64.deb
 ```
+### Caso se pretenda remover uma instalação 
+
+```shell
+$ dpkg --list | grep stereolabs
+> ii  stereolabs-zedx                            1.0.5-LI-MAX96712-L4T35.3.1           arm64        NVIDIA Kernel DTB Modified Package by Stereolabs
+$ sudo dpkg -r stereolabs-zedx
+```
