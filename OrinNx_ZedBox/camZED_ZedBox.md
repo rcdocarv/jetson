@@ -36,3 +36,5 @@ No fim pode testar a zed 2i com este programa [zed2i_orinNX.py](./zed2i_orinNX.p
 Para esta instalação deve incialmente fazer os passos do ponto anterior
 
 ### Instalação de Drivers ZEDx
+
+Nesta [Página](https://www.stereolabs.com/en-pt/developers/drivers)
