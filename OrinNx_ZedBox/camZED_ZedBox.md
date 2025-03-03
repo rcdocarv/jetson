@@ -37,4 +37,4 @@ Para esta instalação deve incialmente fazer os passos do ponto anterior
 
 ### Instalação de Drivers ZEDx
 
-Nesta [Página](https://www.stereolabs.com/en-pt/developers/drivers) podemos baixar os driver correspondentes com a versão de Jetpack, modelo de Jetson e Camera, nesta outra [Página](https://www.stereolabs.com/docs/get-started-with-zed-x#setting-up-your-system-for-zed-x) podemos consultar alguma documentação.
+Nesta [página](https://www.stereolabs.com/en-pt/developers/drivers) podemos baixar os driver correspondentes com a versão de Jetpack, modelo de Jetson e Camera, nestas outras [página](https://www.stereolabs.com/docs/get-started-with-zed-x#setting-up-your-system-for-zed-x) e [Intall Zed Link Driver](https://www.stereolabs.com/docs/get-started-with-zed-link/install-the-drivers) podemos consultar alguma documentação.
