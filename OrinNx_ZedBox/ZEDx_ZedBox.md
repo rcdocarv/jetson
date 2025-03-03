@@ -53,6 +53,7 @@ sudo dpkg -i stereolabs-zedbox-onx16_1.2.2-LI-MAX96712-ALL-ZEDBOX-L4T35.3.1_arm6
 ```
 ### Caso se pretenda remover uma instalação 
 
+Podemos fazer como no exemplo abaixo, primeiros listamos para procurar o nome do pacote instalado. Depois com o parametro -r remove-mos e com o parametro -P apagamos todas as dependências e configurações.
 ```shell
 $ dpkg --list | grep stereolabs
 > ii  stereolabs-zedx                            1.0.5-LI-MAX96712-L4T35.3.1           arm64        NVIDIA Kernel DTB Modified Package by Stereolabs
