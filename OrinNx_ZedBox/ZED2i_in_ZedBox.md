@@ -13,4 +13,4 @@ $ apt-cache policy nvidia-jetpack
 >        500 https://repo.download.nvidia.com/jetson/common r35.3/main arm64 Packages
 >        100 /var/lib/dpkg/status
 ```
-Então na página dos [SDK Downloads](https://www.stereolabs.com/en-pt/developers/release#82af3640d775), fez-se download do [SDK](https://download.stereolabs.com/zedsdk/4.2/l4t35.3/jetsons?_gl=1*tdtmrh*_gcl_au*MTQwNjc3NTc5Ny4xNzQwNjY0Mjcx)
+Então na página dos [SDK Downloads](https://www.stereolabs.com/en-pt/developers/release), fez-se download do [SDK](https://download.stereolabs.com/zedsdk/4.2/l4t35.3/jetsons?_gl=1*tdtmrh*_gcl_au*MTQwNjc3NTc5Ny4xNzQwNjY0Mjcx)
