@@ -58,5 +58,5 @@ Podemos fazer como no exemplo abaixo, primeiros listamos para procurar o nome do
 $ dpkg --list | grep stereolabs
 > ii  stereolabs-zedx                            1.0.5-LI-MAX96712-L4T35.3.1           arm64        NVIDIA Kernel DTB Modified Package by Stereolabs
 $ sudo dpkg -r stereolabs-zedx
-sudo dpkg -P stereolabs-zedx
+$ sudo dpkg -P stereolabs-zedx
 ```
