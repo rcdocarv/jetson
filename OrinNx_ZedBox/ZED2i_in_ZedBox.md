@@ -13,3 +13,4 @@ $ apt-cache policy nvidia-jetpack
 >        500 https://repo.download.nvidia.com/jetson/common r35.3/main arm64 Packages
 >        100 /var/lib/dpkg/status
 ```
+Então [No página](https://www.stereolabs.com/en-pt/developers/release#82af3640d775) 
