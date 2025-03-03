@@ -1,5 +1,5 @@
-# Instalação da zed2i na zed box (Jetson Orin NX)
-
+# Instalação da ZED2i e ZEDx na zed box (Jetson Orin NX)
+## ZED2i
 Para instalação do setereolabs SDK  para dar suporte á camera vamos seguir este link da [Setereolabs](https://www-stereolabs-com.translate.goog/docs/get-started-with-zed-box-orin-nx/installation?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp)
 
 Portanto sabe qual a versão do jetpack
@@ -24,3 +24,5 @@ chmox +x ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
 Depois é necessário ir a `cd /usr/local/zed` e correr no ambiente python pretendido conda ou não `pip install pyzed-4.2-cp38-cp38-linux_aarch64.whl`. Para que ao fazer `import pyzed.sl as sl` não dê erro!
 
 No fim pode testar a zed 2i com este programa [zed2i_orinNX.py](./zed2i_orinNX.py)
+
+# ZEDx
