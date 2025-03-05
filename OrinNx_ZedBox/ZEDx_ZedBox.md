@@ -74,4 +74,4 @@ Please note that installing the 'libv4l-dev' apt package at any point on jetson 
 ZED SDK installation complete !
 ```
 cd /usr/local/zed/
-python get_python_api.py
+sudo python /usr/local/zed/get_python_api.py
