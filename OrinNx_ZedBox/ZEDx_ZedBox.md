@@ -61,7 +61,7 @@ $ sudo dpkg -r stereolabs-zedx
 $ sudo dpkg -P stereolabs-zedx
 ```
 
-#notas
+# notas
 https://www.stereolabs.com/en-pt/developers/release/4.1
 wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.1/ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
 chmod+x ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
