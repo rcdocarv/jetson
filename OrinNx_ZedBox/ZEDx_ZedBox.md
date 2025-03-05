@@ -60,3 +60,16 @@ $ dpkg --list | grep stereolabs
 $ sudo dpkg -r stereolabs-zedx
 $ sudo dpkg -P stereolabs-zedx
 ```
+
+#notas
+https://www.stereolabs.com/en-pt/developers/release/4.1
+wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.1/ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
+chmod+x ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
+./ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
+
+depois do ultimo comando deu isto
+```shell
+For GMSL support, please navigate to https://www.stereolabs.com/docs/get-started-with-zed-x/ where you will find compatible drivers and installation instructions.
+Please note that installing the 'libv4l-dev' apt package at any point on jetson will break the hardware encoding/decoding support
+ZED SDK installation complete !
+```
