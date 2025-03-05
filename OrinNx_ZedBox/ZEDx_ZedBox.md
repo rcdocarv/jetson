@@ -73,3 +73,5 @@ For GMSL support, please navigate to https://www.stereolabs.com/docs/get-started
 Please note that installing the 'libv4l-dev' apt package at any point on jetson will break the hardware encoding/decoding support
 ZED SDK installation complete !
 ```
+cd /usr/local/zed/
+python get_python_api.py
