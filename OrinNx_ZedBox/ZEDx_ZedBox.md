@@ -7,6 +7,8 @@ python3 -m pip install cython
 python3 -m pip install numpy
 ```
 
+Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers)
+
 Para instalação do setereolabs SDK  para dar suporte á camera vamos seguir este link da [Setereolabs](https://www-stereolabs-com.translate.goog/docs/get-started-with-zed-box-orin-nx/installation?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp)
 
 Portanto sabe qual a versão do jetpack
@@ -21,11 +23,10 @@ $ apt-cache policy nvidia-jetpack
 >        100 /var/lib/dpkg/status
 ```
 
-Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers)
-
 Então na página dos [SDK Downloads](https://www.stereolabs.com/en-pt/developers/release) avançamos, fez-se download do [ZED SDK for JetPack 5.1.1 (L4T 35.3) 4.2 (Jetson Xavier, Orin AGX/NX/Nano, CUDA 11.4)](https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run), ou `wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run`
 
 Depois damos permissão de execução e instalamos.
+
 ``` shell
 sudo apt install zstd
 chmox +x ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
