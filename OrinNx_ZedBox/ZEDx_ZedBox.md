@@ -20,6 +20,10 @@ $ apt-cache policy nvidia-jetpack
 >        500 https://repo.download.nvidia.com/jetson/common r35.3/main arm64 Packages
 >        100 /var/lib/dpkg/status
 ```
+
+Agora vamos instalar o [driver da ZEDx](https://www.stereolabs.com/en-pt/developers), 
+
+
 Então na página dos [SDK Downloads](https://www.stereolabs.com/en-pt/developers/release) avançamos, fez-se download do [ZED SDK for JetPack 5.1.1 (L4T 35.3) 4.2 (Jetson Xavier, Orin AGX/NX/Nano, CUDA 11.4)](https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run), ou `wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run`
 
 Depois damos permissão de execução e instalamos.
@@ -68,6 +72,7 @@ chmod+x ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
 ./ZED_SDK_Tegra_L4T35.3_v4.1.4.zstd.run
 
 depois do ultimo comando deu isto
+
 ```shell
 For GMSL support, please navigate to https://www.stereolabs.com/docs/get-started-with-zed-x/ where you will find compatible drivers and installation instructions.
 Please note that installing the 'libv4l-dev' apt package at any point on jetson will break the hardware encoding/decoding support
