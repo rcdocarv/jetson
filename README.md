@@ -68,4 +68,34 @@ https://www.waveshare.com/wiki/JETSON-NANO-DEV-KIT
 [https://github-com.translate.goog/dusty-nv/jetson-inference?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp#deploying-deep-learning](https://github.com/dusty-nv/jetson-inference)
 
 [SdCard](https://forums.developer.nvidia.com/t/jetson-nano-enable-sdmmc3-for-sd-card/165148/3?utm_source=chatgpt.com)
+
 [sdcard 2](https://forums.developer.nvidia.com/t/microsd-card-not-detected-on-jetson-nano-production-module/80776/9)
+
+```shell
+cd /boot/dtb/
+dtc -I dtb -O dts kernel_tegra210-p3448-0000-p3449-0000-b00.dtb > kernel_tegra210-p3448-0000-p3449-0000-b00.dts
+sdhci@700b0400 {
+    status = "okay";
+};
+dtc -I dts -O dtb -o kernel_tegra210-p3448-0000-p3449-0000-b00.dtb tegra210.dts
+```
+
+´´´
+Atualize os pacotes
+bash
+Copiar
+Editar
+sudo apt update && sudo apt upgrade -y
+Instale o Docker
+bash
+Copiar
+Editar
+sudo apt install -y docker.io
+Adicione seu usuário ao grupo Docker (para rodar sem sudo)
+bash
+Copiar
+Editar
+sudo usermod -aG docker $USER
+newgrp docker  # Aplica a mudança sem precisar reiniciar
+´´´
+
