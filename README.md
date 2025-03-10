@@ -63,4 +63,4 @@ sudo apt update
 sudo apt install -y nvidia-container-toolkit
 ```
 
-
+https://www.waveshare.com/wiki/JETSON-NANO-DEV-KIT
