@@ -97,5 +97,10 @@ Copiar
 Editar
 sudo usermod -aG docker $USER
 newgrp docker  # Aplica a mudança sem precisar reiniciar
+sudo apt install -y nvidia-container-runtime
+sudo systemctl restart docker
+sudo docker pull dustynv/jetson-inference:r32.6.1
+sudo docker run --runtime nvidia -it --rm --network host dustynv/jetson-inference:r32.6.1
+
 ´´´
 
