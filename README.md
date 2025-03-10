@@ -65,4 +65,4 @@ sudo apt install -y nvidia-container-toolkit
 
 https://www.waveshare.com/wiki/JETSON-NANO-DEV-KIT
 
-https://github-com.translate.goog/dusty-nv/jetson-inference?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp#deploying-deep-learning
+[https://github-com.translate.goog/dusty-nv/jetson-inference?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp#deploying-deep-learning](https://github.com/dusty-nv/jetson-inference)
