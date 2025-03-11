@@ -148,11 +148,11 @@ sudo docker run --runtime nvidia -it --rm --network host dustynv/jetson-inferenc
 
 # Stereolabs Jetson
 [link dos dockers](https://hub.docker.com/r/stereolabs/zed/)(https://hub.docker.com/r/stereolabs/zed/)
+
 [link de sonho](https://www.stereolabs.com/docs/docker/install-guide-linux)
+
 ```shell
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
-
-
 docker pull stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 docker run --gpus all -it --privileged stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 ```
