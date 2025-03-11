@@ -122,7 +122,7 @@ sdhci@700b0400 {
 dtc -I dts -O dtb -o kernel_tegra210-p3448-0000-p3449-0000-b00.dtb tegra210.dts
 ```
 
-´´´
+```
 Atualize os pacotes
 bash
 Copiar
@@ -144,8 +144,9 @@ sudo systemctl restart docker
 sudo docker pull dustynv/jetson-inference:r32.6.1
 sudo docker run --runtime nvidia -it --rm --network host dustynv/jetson-inference:r32.6.1
 
-´´´
+``` 
 <div style="background-color: #f0f0f0; padding: 10px;">
+    
 ```shell
  curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 ```
