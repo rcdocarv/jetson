@@ -149,7 +149,3 @@ sudo docker run --runtime nvidia -it --rm --network host dustynv/jetson-inferenc
 ```shell
  curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 ```
-
-<div style="background-color: #ff0000; padding: 10px;">
-  Este é um texto com fundo vermelho.
-</div>
