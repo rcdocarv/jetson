@@ -37,7 +37,10 @@ sudo apt install nvidia-cuda
 sudo apt install nvidia-cuda-toolkit -y
 /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery
 ```
-
+## ZED2i
+```shell
+sudo docker pull stereolabs/zed:4.0-devel-l4t-r35.2
+```
 ## Jetson-containers**
 https://github.com/dusty-nv/jetson-containers/tree/master
 
