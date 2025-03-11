@@ -156,5 +156,6 @@ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dear
 docker pull stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 
 sudo docker run --gpus all -it --privileged --runtime=nvidia stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
+sudo docker run --gpus all -it --privileged --runtime=nvidi -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 ```
 
