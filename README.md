@@ -52,7 +52,16 @@ sudo docker pull husarion/zed-jetson:melodic
 cd zed-docker
 #sudo docker build -t husarion/zed-jetson .
 sudo docker images
-sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 --entrypoint /bin/bash husarion/zed-jetson:melodic
+#sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 --entrypoint /bin/bash husarion/zed-jetson:melodic
+sudo docker run --runtime nvidia -it --privileged --device /dev/video0 --entrypoint /bin/bash husarion/zed-jetson:melodic
+
+cd /
+source ../ros_entrypoint.sh
+nvcc --version # se comando não for encontrado
+export CUDA_HOME=/usr/local/cuda-10.2
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+# ou adiconar ao ~/.bashrc ## nano ~/.bashrc
+
 ```
 Instalar o WorkSpace
 ```shell
@@ -70,7 +79,7 @@ $ sudo docker images
 > husarion/zed-jetson        melodic   cf70f77cab2d   22 months ago   2.31GB
 > dustynv/jetson-inference   r32.6.1   5363eb4a3327   3 years ago     2.71GB
 ```
-
+Para listar imagens e containers temos o comando `sudo docker system df`
 
 ## Jetson-containers**
 https://github.com/dusty-nv/jetson-containers/tree/master
