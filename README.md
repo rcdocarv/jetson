@@ -54,6 +54,14 @@ cd zed-docker
 sudo docker images
 sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 --entrypoint /bin/bash husarion/zed-jetson:melodic
 ```
+Instalar o WorkSpace
+```shell
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws
+catkin_make
+```
 ### Gestão de Dockers
 Lista os dockers instalados no sistema.
 ```shell
