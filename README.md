@@ -157,5 +157,11 @@ docker pull stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 
 sudo docker run --gpus all -it --privileged --runtime=nvidia stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
 sudo docker run --gpus all -it --privileged --runtime=nvidia -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix stereolabs/zed:4.2-py-devel-jetson-jp4.6.1
+cd /usr/local/zed/
+apt install git
+git clone https://github.com/stereolabs/zed-sdk.git
+cd zed-sdk/samples/python/
+pip3 install --upgrade pip setuptools
+apt-get install -y build-essential python3-dev libatlas-base-dev gfortran
+pip3 install PyOpenGL PyOpenGL_accelerate
 ```
-
