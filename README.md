@@ -2,7 +2,7 @@
 **remover desnecessarios**
 depois desta acção a jetson terá aproximadamente 9.1Gb livres
 ```shell
-sudo apt remove --purge libreoffice -y
+sudo apt remove --purge libreoffice* -y
 sudo apt remove --purge remmina thunderbird* transmission -y
 sudo apt remove --purge cheese* smplayer lxmusic rhythmbox shotwell -y
 sudo apt remove --purge unity* -y
@@ -47,18 +47,20 @@ sudo apt update
 sudo apt install docker.io
 sudo apt install nvidia-docker2
 sudo systemctl restart docker
-git clone https://github.com/husarion/zed-docker.git
+#sudo docker run --rm --runtime nvidia nvidia/cuda:11.0-base nvidia-smi
+sudo docker pull husarion/zed-jetson:melodic
 cd zed-docker
-sudo docker build -t husarion/zed-jetson .
+#sudo docker build -t husarion/zed-jetson .
 sudo docker images
-sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 husarion/zed-jetson
+sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 --entrypoint /bin/bash husarion/zed-jetson:melodic
 ```
 ### Gestão de Dockers
 Lista os dockers instalados no sistema.
 ```shell
 $ sudo docker images
-> REPOSITORY                 TAG       IMAGE ID       CREATED       SIZE
-> dustynv/jetson-inference   r32.6.1   5363eb4a3327   3 years ago   2.71GB
+> REPOSITORY                 TAG       IMAGE ID       CREATED         SIZE
+> husarion/zed-jetson        melodic   cf70f77cab2d   22 months ago   2.31GB
+> dustynv/jetson-inference   r32.6.1   5363eb4a3327   3 years ago     2.71GB
 ```
 
 
