@@ -45,6 +45,13 @@ Este é o docker oficial `stereolabs/zed:4.0-devel-l4t-r35.2` da ZED com o ZED S
 ```shell
 sudo apt update
 sudo apt install docker.io
+sudo apt install nvidia-docker2
+sudo systemctl restart docker
+git clone https://github.com/husarion/zed-docker.git
+cd zed-docker
+sudo docker build -t husarion/zed-jetson .
+sudo docker images
+sudo docker run --runtime nvidia -it --rm --privileged --device /dev/video0 husarion/zed-jetson
 ```
 ### Gestão de Dockers
 Lista os dockers instalados no sistema.
