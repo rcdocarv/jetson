@@ -146,7 +146,7 @@ sudo docker run --runtime nvidia -it --rm --network host dustynv/jetson-inferenc
 
 ``` 
 <div style="background-color: #00ff00; padding: 10px;">
-    
+    credo
 ```shell
  curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 ```
