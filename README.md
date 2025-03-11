@@ -38,7 +38,7 @@ sudo apt install nvidia-cuda-toolkit -y
 /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery
 ```
 
-## ZED2i
+## Docker ROS+ZED_SDK
 Este é o docker oficial `sudo docker pull stereolabs/zed:4.0-devel-l4t-r35.2` da ZED com o ZED SDK, mas optou-se por este `husarion/zed-jetson:noetic` por já trazer o ROS integrado com o SDK da Setereolabs para cameras ZED.
 
 ```shell
