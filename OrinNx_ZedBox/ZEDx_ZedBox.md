@@ -2,6 +2,7 @@
 ## ZED2i
 Antes de iniciar vamos instalar algumas dependências.
 ```shell
+python -m pip install --upgrade pip setuptools wheel
 sudo apt install -y libopencv-dev python3-opencv
 python -m pip install cython numpy pyopengl
 ```
