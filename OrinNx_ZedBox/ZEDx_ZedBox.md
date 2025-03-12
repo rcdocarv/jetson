@@ -2,9 +2,8 @@
 ## ZED2i
 Antes de iniciar vamos instalar algumas dependências.
 ```shell
-python -m pip install cython numpy opencv-python pyopengl
-python3 -m pip install cython
-python3 -m pip install numpy
+sudo apt install -y libopencv-dev python3-opencv
+python -m pip install cython numpy pyopengl
 ```
 
 Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers)
