@@ -1,6 +1,7 @@
 # instalar CUDA
 ``` shell
-apt install -y nvidia-cuda-toolkit
+#apt install -y nvidia-cuda-toolkit
+sudo apt install -y cuda-toolkit-10-2
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
