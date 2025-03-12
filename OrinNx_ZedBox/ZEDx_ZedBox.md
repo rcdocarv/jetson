@@ -6,7 +6,7 @@ sudo apt install -y libopencv-dev python3-opencv
 python -m pip install cython numpy pyopengl
 ```
 
-Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers)
+Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers), mas primeiro precisamos saber a versão do jetpack!
 
 Portanto sabe qual a versão do jetpack
 ``` shell
