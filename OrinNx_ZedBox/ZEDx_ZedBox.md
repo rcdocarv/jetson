@@ -32,7 +32,7 @@ chmox +x ZED_SDK_Tegra_L4T35.3_v4.2.5.zstd.run
 ```
 Depois é necessário ir a `cd /usr/local/zed` e correr no ambiente python pretendido conda ou não `pip install pyzed-4.2-cp38-cp38-linux_aarch64.whl`. Para que ao fazer `import pyzed.sl as sl` não dê erro!
 
-No fim pode testar a zed 2i com este programa [zed2i_orinNX.py](./zed2i_orinNX.py)
+No fim pode testar a zed 2i com este programa [zed2i_orinNX.py](https://raw.githubusercontent.com/rcdocarv/jetson/refs/heads/main/OrinNx_ZedBox/zed2i_orinNX.py)
 
 ## ZEDx
 Para esta instalação deve incialmente fazer os passos do ponto anterior
