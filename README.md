@@ -1,3 +1,12 @@
+# instalar CUDA
+``` shell
+apt install -y nvidia-cuda-toolkit
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+nvcc --version
+deviceQuery
+```
 # jet
 **remover desnecessarios**
 depois desta acção a jetson terá aproximadamente 9.1Gb livres
