@@ -8,8 +8,6 @@ python -m pip install cython numpy pyopengl
 
 Agora vamos instalar o [Driver da ZEDx](https://www.stereolabs.com/en-pt/developers)
 
-Para instalação do setereolabs SDK  para dar suporte á camera vamos seguir este link da [Setereolabs](https://www-stereolabs-com.translate.goog/docs/get-started-with-zed-box-orin-nx/installation?_x_tr_sl=en&_x_tr_tl=pt-PT&_x_tr_hl=pt-PT&_x_tr_pto=wapp)
-
 Portanto sabe qual a versão do jetpack
 ``` shell
 $ apt-cache policy nvidia-jetpack
