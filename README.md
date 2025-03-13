@@ -10,7 +10,7 @@ chmod +x jetson_config.sh
 
 **No fim do comando correr irá ter**:
 * Upgrade do SO terminado para a mesma versão Ubuntu que a distribuida
-* software desnessário removido
+* Software desnessário removido
 * Language pack pt-PT instalado
 * Fuso horário configurado
 * Python3.8 instalado além do python3.6
