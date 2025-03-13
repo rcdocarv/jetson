@@ -61,5 +61,8 @@ sudo apt install build-essential cmake
 pip3 install scikit-build
 pip3 install opencv-contrib-python
 
-sudo apt install -y libopencv-dev python3-opencv
 python -m pip install cython numpy pyopengl
+
+# instalar SDK setereolabs
+apt-cache policy nvidia-jetpack # consulta a versão do jetpack 4.6.6
+
