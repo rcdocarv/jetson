@@ -13,11 +13,7 @@ deviceQuery
 depois desta acção a jetson terá aproximadamente 9.1Gb livres
 ```shell
 sudo apt remove --purge libreoffice* -y
-sudo apt remove --purge remmina thunderbird* transmission -y
-sudo apt remove --purge cheese* smplayer lxmusic rhythmbox shotwell -y
-sudo apt remove --purge unity* -y
-sudo apt remove --purge gnome* -y
-sudo apt remove --purge openbox* -y
+sudo apt remove --purge remmina thunderbird* transmission cheese* smplayer lxmusic rhythmbox shotwell unity* gnome* openbox* -y
 sudo apt autoremove --purge -y
 ```
 
