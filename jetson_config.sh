@@ -32,7 +32,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 
-# Instala Jetson TOP
+# Instala Jetson TOP 
 sudo apt install python3-pip -y
 sudo pip3 install -U jetson-stats
 sudo systemctl restart jtop.service
@@ -43,9 +43,20 @@ jetson_release
 (crontab -l 2>/dev/null; echo "@reboot jetson_clocks --fan") | crontab -
 echo "Fan Configurada"
 
-# Instalar CUDA E CudNN
-sudo apt search nvidia-jetpack
-sudo apt install -y nvidia-cuda-toolkit libcudnn8
+# Instalar CUDA E CudNN (Pacotes minimos individuais)
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/cuda-repo-ubuntu1804_10.2.460-1_arm64.deb
+sudo dpkg -i cuda-repo-ubuntu1804_10.2.460-1_arm64.deb
+sudo apt update
+sudo apt install -y cuda-nvcc-10-2 libcudnn8
+sudo apt autoremove -y
+sudo apt clean
+
+# Instalar CUDA E CudNN (versão completa)
+#sudo apt search nvidia-jetpack
+#sudo apt install -y nvidia-cuda-toolkit libcudnn8
+
+
+# adciona ao path/bashrc
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
