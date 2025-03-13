@@ -56,6 +56,7 @@ nvcc --version
 # Instalar Opencv setuptools whell 
 python -m pip install --upgrade pip setuptools wheel
 sudo apt install build-essential cmake
+pip3 install scikit-build
 pip3 install opencv-contrib-python
 
 sudo apt install -y libopencv-dev python3-opencv
