@@ -13,6 +13,9 @@ sudo apt autoremove --purge -y
 # Instala pacotes essenciais
 sudo apt install -y language-pack-pt nano iceweasel python3.8 
 
+# Define o python por defeito a versão 3.8
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+
 # Configuração do fuso horário
 sudo dpkg-reconfigure tzdata
 
