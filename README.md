@@ -19,7 +19,8 @@ chmod +x jetson_config.sh
 * O espaço pelo Sistema operativo será ainda menor **4.2Gb** - 33% poupando 700Mb!
 * Fan configurada para trabalharem modo automático.
 
-Se Comentar no script o MINIMAL CUDA E CudNN, e correr o script o espaço usado em disco será de **7.9Gb** (61%), se optar por 
+Se o script correr completo e instalar o CUDA o espaço em disco será de **7.9Gb** (61%) e 5.1GB livres.
+
 
  ``` shell
 #apt install -y nvidia-cuda-toolkit
