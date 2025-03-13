@@ -8,13 +8,17 @@ chmod +x jetson_config.sh
 ./jetson_config.sh
 ```
 
-*
+**No fim do comando correr irá ter**:
+* Upgrade do SO terminado para a mesma versão Ubuntu que a distribuida
+* software desnessário removido
+* Language pack pt-PT instalado
+* Fuso horário configurado
+* Python3.8 instalado além do python3.6
+* Versão default do comando **python** configurada para python3.8 ao invés de python2.7
+* **Jtop** instalado e configurado para que possa consultar o desenpenho e libs como CUDA!!!
+* O espaço pelo Sistema operativo será ainda menor **4.2Gb** - 33% poupando 700Mb!
 
-No fim do comando correr irá ter o sistema com upgrade terminado para a mesma versão, software desnessário removido, language pack e fuso horário configurado, python3.6 e python3.8, também o pip instalado. A versão default do python passará a ser a 3.8 o Jtop também estará instalado, para que seja possivel consultar o cuda por exemplo. O Espaço ocupado será de **4.2Gb** (33%) e terá 8.8Gb de espaço livre.
-
-
-
-``` shell
+ ``` shell
 #apt install -y nvidia-cuda-toolkit
 sudo apt install -y cuda-toolkit-10-2
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
