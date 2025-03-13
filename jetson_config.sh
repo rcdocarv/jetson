@@ -41,4 +41,4 @@ jetson_release
 
 # Configura a FAN
 (crontab -l 2>/dev/null; echo "@reboot jetson_clocks --fan") | crontab -
-echo "Comando adicionado ao crontab com sucesso!"
+echo "Fan Configurada"
