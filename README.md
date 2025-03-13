@@ -17,6 +17,7 @@ chmod +x jetson_config.sh
 * Versão default do comando **python** configurada para python3.8 ao invés de python2.7
 * **Jtop** instalado e configurado para que possa consultar o desenpenho e libs como CUDA!!!
 * O espaço pelo Sistema operativo será ainda menor **4.2Gb** - 33% poupando 700Mb!
+* Fan configurada para trabalharem modo automático.
 
  ``` shell
 #apt install -y nvidia-cuda-toolkit
