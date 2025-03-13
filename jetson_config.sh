@@ -29,3 +29,9 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 
+# Instala Jetson TOP
+sudo apt install python3-pip -y
+sudo pip3 install -U jetson-stats
+sudo systemctl restart jtop.service
+jtop
+jetson_release
