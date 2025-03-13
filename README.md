@@ -7,6 +7,7 @@ Instale o sistema operativo com recurso ao NVidia SDK. Após iniciar assegure qu
 chmod +x jetson_config.sh
 ./jetson_config.sh
 ```
+No fim do comando correr irá ter o sistema com upgrade terminado para a mesma versão, software desnessário removido, language pack e fuso horário configurado, python3.6 e python3.8, também o pip instalado. A versão default do python passará a ser a 3.8 o Jtop também estará instalado, para que seja possivel consultar o cuda por exemplo.
 
 ``` shell
 #apt install -y nvidia-cuda-toolkit
