@@ -64,5 +64,6 @@ pip3 install opencv-contrib-python
 python -m pip install cython numpy pyopengl
 
 # instalar SDK setereolabs
+sudo apt install zstd
 apt-cache policy nvidia-jetpack # consulta a versão do jetpack 4.6.6
 
