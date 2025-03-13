@@ -3,11 +3,16 @@
 ## jetson_config.sh
 Instale o sistema operativo com recurso ao NVidia SDK. Após iniciar assegure que usa o cabo de energia apropriado, ligue-se a uma rede wireless com internet, e login no ambiente gráfico **LXDE**! O sistema acabado de instalar apenas com SO sem nada mais tem **4.9Gb** (38%), resta um espaço livre de **8.1Gb**, deve efectuar o download do **jetson_config.sh** para a jetson. E na pasta para onde guardou o script correr os seguinte comandos.
 
-``` shell
+```shell
 chmod +x jetson_config.sh
 ./jetson_config.sh
 ```
+
+*
+
 No fim do comando correr irá ter o sistema com upgrade terminado para a mesma versão, software desnessário removido, language pack e fuso horário configurado, python3.6 e python3.8, também o pip instalado. A versão default do python passará a ser a 3.8 o Jtop também estará instalado, para que seja possivel consultar o cuda por exemplo. O Espaço ocupado será de **4.2Gb** (33%) e terá 8.8Gb de espaço livre.
+
+
 
 ``` shell
 #apt install -y nvidia-cuda-toolkit
