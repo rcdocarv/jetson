@@ -42,3 +42,11 @@ jetson_release
 # Configura a FAN
 (crontab -l 2>/dev/null; echo "@reboot jetson_clocks --fan") | crontab -
 echo "Fan Configurada"
+
+# Instalar CUDA E CudNN
+sudo apt search nvidia-jetpack
+sudo apt install -y nvidia-cuda-toolkit libcudnn8
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+nvcc --version
