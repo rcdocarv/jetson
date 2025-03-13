@@ -1,6 +1,6 @@
 # instalar CUDA
 
-sistemas apenas com SO sem nada mais **4.9Gb** ou seja 38%.
+sistemas apenas com SO sem nada mais **4.9Gb** ou seja 38%, resta **8.1Gb**
 
 ``` shell
 #apt install -y nvidia-cuda-toolkit
