@@ -52,3 +52,11 @@ echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 nvcc --version
+
+# Instalar Opencv setuptools whell 
+python -m pip install --upgrade pip setuptools wheel
+sudo apt install build-essential cmake
+pip3 install opencv-contrib-python
+
+sudo apt install -y libopencv-dev python3-opencv
+python -m pip install cython numpy pyopengl
