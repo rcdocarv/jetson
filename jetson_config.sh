@@ -1,19 +1,31 @@
-# remove softwares desnecessarios
-sudo apt update
-sudo apt remove --purge chromium-browser libreoffice* remmina thunderbird* transmission cheese* smplayer lxmusic rhythmbox shotwell unity* gnome* openbox* -y
-sudo apt autoremove --purge -y
-sudo apt install language-pack-pt nano iceweasel python3.8 -y 
+#!/bin/bash
 
-# coniguração do fuso horario
+# Atualiza a lista de pacotes
+sudo apt update
+# Remove softwares desnecessários
+sudo apt remove --purge -y \
+    chromium-browser libreoffice* remmina thunderbird* transmission \
+    cheese* smplayer lxmusic rhythmbox shotwell
+    
+# Remover pacotes órfãos
+sudo apt autoremove --purge -y
+
+# Instala pacotes essenciais
+sudo apt install -y language-pack-pt nano iceweasel python3.8 
+
+# Configuração do fuso horário
 sudo dpkg-reconfigure tzdata
 
-# Configuração de teclado
+# Configuração do teclado
 sudo dpkg-reconfigure keyboard-configuration
 
-# Verificação de pacotes 
-dpkg –-configure -a
-apt -f install
+# Corrigir pacotes quebrados
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+sudo apt -f install
 
+# Atualizar e melhorar o sistema
 sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
+
