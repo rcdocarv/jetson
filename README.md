@@ -1,5 +1,7 @@
 # instalar CUDA
 
+## jetson_config.sh
+Instale o sistema operativo com recurso ao NVidia SDK. Após iniciar assegure que usa o cabo de energia apropriado, ligue-se a uma rede wireless com internet, e login no ambiente gráfico **LXDE**!
 sistemas apenas com SO sem nada mais **4.9Gb** ou seja 38%, resta **8.1Gb**
 
 ``` shell
