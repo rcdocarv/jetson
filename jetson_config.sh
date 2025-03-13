@@ -43,7 +43,12 @@ jetson_release
 (crontab -l 2>/dev/null; echo "@reboot jetson_clocks --fan") | crontab -
 echo "Fan Configurada"
 
-# Instalar CUDA E CudNN (Pacotes minimos individuais)
+# MINIMAL CUDA E CudNN (Pacotes minimos individuais)
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.2.460-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1804_10.2.460-1_amd64.deb
+sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+sudo apt update
+
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/cuda-repo-ubuntu1804_10.2.460-1_arm64.deb
 sudo dpkg -i cuda-repo-ubuntu1804_10.2.460-1_arm64.deb
 sudo apt update
@@ -51,10 +56,9 @@ sudo apt install -y cuda-nvcc-10-2 libcudnn8
 sudo apt autoremove -y
 sudo apt clean
 
-# Instalar CUDA E CudNN (versão completa)
+# FULL CUDA E CudNN (versão completa)
 #sudo apt search nvidia-jetpack
 #sudo apt install -y nvidia-cuda-toolkit libcudnn8
-
 
 # adciona ao path/bashrc
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
