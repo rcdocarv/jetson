@@ -89,6 +89,10 @@ git checkout 4.5.5  # Escolha uma versão estável
 cd ../opencv_contrib
 git checkout 4.5.5
 
+cd ~/opencv
+mkdir build
+cd build
+
 # Instalar Opencv setuptools whell 
 python -m pip install --upgrade pip setuptools wheel
 sudo apt install build-essential cmake
