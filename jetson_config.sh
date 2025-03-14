@@ -55,14 +55,6 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashr
 source ~/.bashrc
 nvcc --version
 
-# Instalar Opencv setuptools whell 
-python -m pip install --upgrade pip setuptools wheel
-sudo apt install build-essential cmake
-pip3 install scikit-build
-pip3 install opencv-contrib-python
-
-python -m pip install cython numpy pyopengl
-
 # instalar SDK setereolabs
 sudo apt install zstd
 apt-cache policy nvidia-jetpack # consulta a versão do jetpack 4.6.6
@@ -70,3 +62,15 @@ wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra
 chmod +x ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
 ./ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
+
+# Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
+sudo apt-get purge -y libopencv*
+sudo apt-get autoremove -y
+
+# Instalar Opencv setuptools whell 
+python -m pip install --upgrade pip setuptools wheel
+sudo apt install build-essential cmake
+pip3 install scikit-build
+pip3 install opencv-contrib-python
+
+python -m pip install cython numpy pyopengl
