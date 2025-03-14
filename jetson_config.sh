@@ -80,6 +80,15 @@ sudo apt update && sudo apt install -y \
     libopenblas-dev libatlas-base-dev gfortran \
     libhdf5-dev libprotobuf-dev protobuf-compiler
 
+## clonar repositorio OPencvs
+cd ~
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv
+git checkout 4.5.5  # Escolha uma versão estável
+cd ../opencv_contrib
+git checkout 4.5.5
+
 # Instalar Opencv setuptools whell 
 python -m pip install --upgrade pip setuptools wheel
 sudo apt install build-essential cmake
