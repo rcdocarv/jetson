@@ -67,6 +67,19 @@ echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
 sudo apt-get purge -y libopencv*
 sudo apt-get autoremove -y
 
+## Dependencias do opencv
+sudo apt update && sudo apt install -y \
+    build-essential cmake git pkg-config \
+    libjpeg-dev libtiff-dev libpng-dev \
+    libavcodec-dev libavformat-dev libswscale-dev \
+    libgtk2.0-dev libcanberra-gtk* \
+    libxvidcore-dev libx264-dev libgtk-3-dev \
+    python3-dev python3-numpy python3-pip \
+    libtbb2 libtbb-dev libdc1394-22-dev \
+    libv4l-dev v4l-utils qv4l2 v4l2ucp \
+    libopenblas-dev libatlas-base-dev gfortran \
+    libhdf5-dev libprotobuf-dev protobuf-compiler
+
 # Instalar Opencv setuptools whell 
 python -m pip install --upgrade pip setuptools wheel
 sudo apt install build-essential cmake
