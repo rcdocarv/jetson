@@ -63,6 +63,14 @@ chmod +x ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
 ./ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
 
+# INstalação do TensorRT
+dpkg -l | grep nvinfer # Verificar Se o tensorRT está instalado
+sudo apt update
+sudo apt install -y nvidia-tensorrt
+ls /usr/lib/aarch64-linux-gnu/ | grep libnvinfer # Verificar se as libs estão instalados
+export LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH    # verifica se o tensorrt se encontra no path
+echo 'export LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH' >> ~/.bashrc #adiciona o tensor RT ao Path
+
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
 sudo apt-get purge -y libopencv*
 sudo apt-get autoremove -y
