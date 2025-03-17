@@ -78,6 +78,7 @@ sudo apt install -y libgtk-3-dev libcanberra-gtk3-module libatlas-base-dev gfort
 sudo apt install -y python3.8-distutils python3.8-dev
 apt-get install python3.8-venv
 python -m venv jet
+source jet/bin/activate
 pip install --upgrade pip
 pip install opencv-python
 pip install opencv-contrib-python
