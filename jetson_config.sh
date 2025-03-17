@@ -122,7 +122,12 @@ source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 roslaunch zed_wrapper zed2i.launch
-
+sudo apt install ros-melodic-rtabmap-ros
+roslaunch rtabmap_ros rtabmap.launch \
+    depth_topic:=/zed2i/depth/image_rect_color \
+    rgb_topic:=/zed2i/rgb/image_rect_color \
+    camera_info_topic:=/zed2i/rgb/camera_info \
+    odom_topic:=/zed2i/odom
 # ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
 sudo apt-get purge -y libopencv*
