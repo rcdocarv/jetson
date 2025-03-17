@@ -104,6 +104,9 @@ lsb_release -a
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F42ED6FBAB17C654
 sudo apt update
 
+# ROS + SLAM
+sudo apt install ros-melodic-rtabmap-ros ros-melodic-zed-ros-wrapper
+
 # ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
 sudo apt-get purge -y libopencv*
