@@ -107,10 +107,12 @@ sudo apt update
 # ROS + SLAM
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-
-cd ~/catkin_ws/src
 git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git
 cd ../
+sudo apt-get install ros-melodic-image-transport
+sudo apt-get install ros-melodic-tf2-ros
+sudo apt-get install ros-melodic-tf2-geometry-msgs
+sudo apt-get install ros-melodic-diagnostic-updater
 rosdep install --from-paths src --ignore-src -r -y
 catkin_make -DCMAKE_BUILD_TYPE=Release
 source ./devel/setup.bash
