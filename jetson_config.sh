@@ -56,12 +56,15 @@ source ~/.bashrc
 nvcc --version
 
 # instalar SDK setereolabs
+sudo apt install -y build-essential python3-dev python3-pip python3-setuptools python3-wheel cython3 libatlas-base-dev libopenblas-dev
 sudo apt install zstd
 apt-cache policy nvidia-jetpack # consulta a versão do jetpack 4.6.6
 wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
 chmod +x ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
+
 ./ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
+
 
 # INstalação do TensorRT
 dpkg -l | grep nvinfer # Verificar Se o tensorRT está instalado
