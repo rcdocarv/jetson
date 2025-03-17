@@ -58,8 +58,8 @@ nvcc --version
 # instalar SDK setereolabs
 sudo apt install -y build-essential python3-dev python3-pip python3-setuptools python3-wheel cython3 libatlas-base-dev libopenblas-dev
 pip3 install --upgrade pip
-pip3 install Cython==0.29.24
-pip3 install numpy==1.21.4
+#pip3 install Cython==0.29.24
+#pip3 install numpy==1.21.4
 sudo apt install zstd
 apt-cache policy nvidia-jetpack # consulta a versão do jetpack 4.6.6
 wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/4.2/ZED_SDK_Tegra_L4T32.7_v4.2.5.zstd.run
