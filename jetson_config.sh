@@ -46,7 +46,7 @@ jetson_release
 echo "Fan Configurada"
 
 # FULL CUDA E CudNN (versão completa)
-sudo apt search nvidia-jetpack
+sudo apt install nvidia-jetpack
 sudo apt install -y nvidia-cuda-toolkit libcudnn8
 
 # adciona ao path/bashrc
