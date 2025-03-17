@@ -72,12 +72,17 @@ export LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH    # verifica
 echo 'export LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH' >> ~/.bashrc #adiciona o tensor RT ao Path
 
 # INstalar OpenCV
-apt-get install python3-venv
 sudo apt install python3.8 python3.8-dev python3.8-venv
 sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
 sudo apt install -y libgtk-3-dev libcanberra-gtk3-module libatlas-base-dev gfortran
 sudo apt install -y python3.8-distutils python3.8-dev
+apt-get install python3.8-venv
+python -m venv jet
+pip install --upgrade pip
+pip install opencv-python
+pip install opencv-contrib-python
 
+# ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
 sudo apt-get purge -y libopencv*
 sudo apt-get autoremove -y
