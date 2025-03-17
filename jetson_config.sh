@@ -105,7 +105,15 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F42ED6FBAB
 sudo apt update
 
 # ROS + SLAM
-sudo apt install ros-melodic-rtabmap-ros ros-melodic-zed-ros-wrapper
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+
+cd ~/catkin_ws/src
+git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git
+cd ../
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make -DCMAKE_BUILD_TYPE=Release
+source ./devel/setup.bash
 
 # ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
