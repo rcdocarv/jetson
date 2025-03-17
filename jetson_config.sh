@@ -121,6 +121,7 @@ source ./devel/setup.bash
 source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+sudo apt-get install ros-melodic-robot-state-publisher
 roslaunch zed_wrapper zed2i.launch
 sudo apt install ros-melodic-rtabmap-ros
 roslaunch rtabmap_ros rtabmap.launch \
