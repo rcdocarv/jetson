@@ -128,6 +128,8 @@ roslaunch rtabmap_ros rtabmap.launch \
     rgb_topic:=/zed2i/rgb/image_rect_color \
     camera_info_topic:=/zed2i/rgb/camera_info \
     odom_topic:=/zed2i/odom
+
+rosrun rviz rviz
 # ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
 sudo apt-get purge -y libopencv*
