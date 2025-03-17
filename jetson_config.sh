@@ -4,8 +4,8 @@
 sudo apt update
 # Remove softwares desnecessários
 sudo apt remove --purge -y \
-    chromium-browser libreoffice* remmina thunderbird* transmission \
-    cheese* smplayer lxmusic rhythmbox shotwell
+chromium-browser libreoffice* remmina thunderbird* transmission \
+cheese* smplayer lxmusic rhythmbox shotwell
     
 # Remover pacotes órfãos
 sudo apt autoremove --purge -y
@@ -116,6 +116,10 @@ sudo apt-get install ros-melodic-diagnostic-updater
 rosdep install --from-paths src --ignore-src -r -y
 catkin_make -DCMAKE_BUILD_TYPE=Release
 source ./devel/setup.bash
+source ~/catkin_ws/devel/setup.bash
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+roslaunch zed_wrapper zed2i.launch
 
 # ---------------------------------------------------------------------
 # Instalar OOPENCV COMPILADO COM CUDA UuuuuuuPAaaaaaaa 
