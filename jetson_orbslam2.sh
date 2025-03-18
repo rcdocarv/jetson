@@ -232,7 +232,15 @@ find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcv::Mat\.at\b/mat.at/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\breturn cv::Mat\.clone\b/return mat.clone/g' {} +
 
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvmGet\b/at/g' {} +
-
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvmSet\b/at/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvSolve\b/cv::solve/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_SVD\b/cv::DECOMP_SVD/g' {} +
+
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/PW0->data.db/PW0.at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::mulTransposed(PW0, &PW0tPW0, 1)/cv::mulTransposed(PW0, PW0tPW0, true)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::SVD::compute(&PW0tPW0, &DC, &UCt, 0, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/cv::SVD::compute(PW0tPW0, DC, UCt, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/release(&PW0)/PW0.release()/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::invert(&CC, &CC_inv, cv::DECOMP_SVD)/cv::invert(CC, CC_inv, cv::DECOMP_SVD)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/M->data.db/M.at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::mulTransposed(M, &MtM, 1)/cv::mulTransposed(M, MtM, true)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::SVD::compute(&MtM, &D, &Ut, 0, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/cv::SVD::compute(MtM, D, Ut, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/g' {} +
