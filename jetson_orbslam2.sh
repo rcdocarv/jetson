@@ -12,9 +12,8 @@ pkg-config --modversion opencv4 # verifica se está instalado
 pkg-config --cflags --libs opencv4 # caminho da instalação
 # Editar o CMakeLists.txt set(CMAKE_CXX_STANDARD 11) nao se fez
 # 
-cmake .. -DOpenCV_DIR=/usr/include/opencv4/opencv2 -DCMAKE_CXX_STANDARD=11
+#cmake .. -DOpenCV_DIR=/usr/include/opencv4/opencv2 -DCMAKE_CXX_STANDARD=11
 cmake .. -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake -DCMAKE_CXX_STANDARD=11
-
 #cmake ..
 
 make -j$(nproc)
