@@ -64,14 +64,29 @@ mkdir build && cd build
 cmake ..
 make -j$(nproc)
 $$$$$$%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INSTALAR PANGOLIN %%%%%%%%%%%%%%%%%%%%%%%555
+sudo apt-get install -y libglew-dev
 git clone https://github.com/stevenlovegrove/Pangolin.git
 cd Pangolin
+git checkout v0.5  # Este é um commit mais antigo que deve ser compatível
 mkdir build
 cd build
 cmake ..
 make -j4
 sudo make install
+
 export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
+onfigure o CMake para encontrar o Pangolin: Adicione o caminho do Pangolin ao CMAKE_PREFIX_PATH ou defina a variável Pangolin_DIR no terminal:
+
+export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
+Atualize o CMakeLists.txt do ORB_SLAM2: Certifique-se de que o CMakeLists.txt do ORB_SLAM2 está configurado para encontrar o Pangolin:
+
+find_package(Pangolin REQUIRED)
+Depois de seguir esses passos, tente novamente os seguintes comandos no diretório do ORB_SLAM2:
+
+cd ~/ORB_SLAM2/build
+rm -rf CMakeFiles CMakeCache.txt
+cmake .. -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4 -DCMAKE_CXX_STANDARD=11 -DPangolin_DIR=/usr/local/lib/cmake/Pangolin
+make
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 cd ../../../
 mkdir build && cd build
