@@ -210,3 +210,4 @@ cmake .. -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4 -DCMAKE_CXX_STAND
 # trocar #Include <opencv/cv.h> por #include <opencv2/opencv.hpp>
 nano ~/ORB_SLAM2/src/System.cc
 # adicionar #include <unistd.h>
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCvMat\b/cv::Mat/g' {} +
