@@ -75,10 +75,9 @@ make -j4
 sudo make install
 
 Configure o CMake para encontrar o Pangolin: Adicione o caminho do Pangolin ao CMAKE_PREFIX_PATH ou defina a variável Pangolin_DIR no terminal:
-
 export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
-Atualize o CMakeLists.txt do ORB_SLAM2: Certifique-se de que o CMakeLists.txt do ORB_SLAM2 está configurado para encontrar o Pangolin:
 
+Atualize o CMakeLists.txt do ORB_SLAM2: Certifique-se de que o CMakeLists.txt do ORB_SLAM2 está configurado para encontrar o Pangolin:
 find_package(Pangolin REQUIRED)
 Depois de seguir esses passos, tente novamente os seguintes comandos no diretório do ORB_SLAM2:
 
@@ -203,5 +202,11 @@ add_executable(mono_euroc
 Examples/Monocular/mono_euroc.cc)
 target_link_libraries(mono_euroc ${PROJECT_NAME})
 ################################################################################
-cmake ..
-make -j$(nproc)
+#cmake ..
+#make -j$(nproc)
+rm -rf CMakeFiles CMakeCache.txt
+cmake .. -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4 -DCMAKE_CXX_STANDARD=11 -DPangolin_DIR=/usr/local/lib/cmake/Pangolin
+# editar os ficheiro /home/star/ORB_SLAM2/INclude/Orb_extrator
+# trocar #Include <opencv/cv.h> por #include <opencv2/opencv.hpp>
+nano ~/ORB_SLAM2/src/System.cc
+# adicionar #include <unistd.h>
