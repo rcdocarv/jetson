@@ -219,3 +219,11 @@ find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_BGRA2GRAY\b/cv::COLOR_BGRA2GRAY/g
 # nano ~/ORB_SLAM2/src/LocalMapping.cc - #include <unistd.h>
 # nano ~/ORB_SLAM2/src/LoopClosing.h   - #include <unistd.h>
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_GRAY2BGR\b/cv::COLOR_GRAY2BGR/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvCreateMat\b/new cv::Mat/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvMat\b/cv::Mat/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvMulTransposed\b/cv::mulTransposed/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_SVD_MODIFY_A\b/cv::SVD::MODIFY_A/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_SVD_U_T\b/cv::SVD::FULL_UV/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvSVD\b/cv::SVD::compute/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvReleaseMat\b/release/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvInvert\b/cv::invert/g' {} +
