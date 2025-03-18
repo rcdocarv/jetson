@@ -227,3 +227,12 @@ find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_SVD_U_T\b/cv::SVD::FULL_UV/g' {} 
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvSVD\b/cv::SVD::compute/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvReleaseMat\b/release/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvInvert\b/cv::invert/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcv::Mat cv::Mat\b/cv::Mat mat/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcv::Mat\.at\b/mat.at/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\breturn cv::Mat\.clone\b/return mat.clone/g' {} +
+
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvmGet\b/at/g' {} +
+
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvmSet\b/at/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bcvSolve\b/cv::solve/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_SVD\b/cv::DECOMP_SVD/g' {} +
