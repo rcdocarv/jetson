@@ -258,3 +258,21 @@ find ~/ORB_SLAM2/ -type f -exec sed -i 's/PW0.at<double>/PW0->at<double>/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::mulTransposed(PW0, PW0tPW0, true)/cv::mulTransposed(*PW0, PW0tPW0, true)/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::SVD::compute(PW0tPW0, DC, UCt, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/cv::SVD::compute(PW0tPW0, DC, UCt, cv::SVD::MODIFY_A | cv::SVD::FULL_UV)/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/PW0.release()/PW0->release()/g' {} +
+
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/at(&L_6x4, i, 0, at(L_6x10, i, 0))/L_6x4.at<double>(i, 0) = L_6x10.at<double>(i, 0)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::solve(&L_6x4, Rho, &B4, cv::DECOMP_SVD)/cv::solve(L_6x4, Rho, B4, cv::DECOMP_SVD)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/at(&L_6x3, i, 0, at(L_6x10, i, 0))/L_6x3.at<double>(i, 0) = L_6x10.at<double>(i, 0)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::solve(&L_6x3, Rho, &B3, cv::DECOMP_SVD)/cv::solve(L_6x3, Rho, B3, cv::DECOMP_SVD)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/at(&L_6x5, i, 0, at(L_6x10, i, 0))/L_6x5.at<double>(i, 0) = L_6x10.at<double>(i, 0)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::solve(&L_6x5, Rho, &B5, cv::DECOMP_SVD)/cv::solve(L_6x5, Rho, B5, cv::DECOMP_SVD)/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/A->data.db/A->at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/at(b, i, 0, rho[i] -/b->at<double>(i, 0) = rho[i] -/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/L_6x10->data.db/L_6x10->at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/Rho->data.db/Rho->at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/A->data.db/A->at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/b->data.db/b->at<double>/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/X->data.db/X->at<double>/g' {} +
+
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/release(&M)/M.release()/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cvSetZero(&ABt)/ABt.setTo(cv::Scalar::all(0))/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/cv::SVD::compute(&ABt, &ABt_D, &ABt_U, &ABt_V, cv::SVD::MODIFY_A)/cv::SVD::compute(ABt, ABt_D, ABt_U, ABt_V, cv::SVD::MODIFY_A)/g' {} +
