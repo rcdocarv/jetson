@@ -63,7 +63,16 @@ cd ../../g2o
 mkdir build && cd build
 cmake ..
 make -j$(nproc)
-
+$$$$$$%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INSTALAR PANGOLIN %%%%%%%%%%%%%%%%%%%%%%%555
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+mkdir build
+cd build
+cmake ..
+make -j4
+sudo make install
+export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 cd ../../../
 mkdir build && cd build
 # alterar o CMAKElist.txt em /home/star/ORB_SLAM2
