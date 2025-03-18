@@ -74,8 +74,7 @@ cmake ..
 make -j4
 sudo make install
 
-export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
-onfigure o CMake para encontrar o Pangolin: Adicione o caminho do Pangolin ao CMAKE_PREFIX_PATH ou defina a variável Pangolin_DIR no terminal:
+Configure o CMake para encontrar o Pangolin: Adicione o caminho do Pangolin ao CMAKE_PREFIX_PATH ou defina a variável Pangolin_DIR no terminal:
 
 export Pangolin_DIR=/usr/local/lib/cmake/Pangolin
 Atualize o CMakeLists.txt do ORB_SLAM2: Certifique-se de que o CMakeLists.txt do ORB_SLAM2 está configurado para encontrar o Pangolin:
