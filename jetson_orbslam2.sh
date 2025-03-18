@@ -211,3 +211,8 @@ cmake .. -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4 -DCMAKE_CXX_STAND
 nano ~/ORB_SLAM2/src/System.cc
 # adicionar #include <unistd.h>
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCvMat\b/cv::Mat/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_RGB2GRAY\b/cv::COLOR_RGB2GRAY/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_BGR2GRAY\b/cv::COLOR_BGR2GRAY/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_RGBA2GRAY\b/cv::COLOR_RGBA2GRAY/g' {} +
+find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_BGRA2GRAY\b/cv::COLOR_BGRA2GRAY/g' {} +
+# editar e acrescentar "#include <unistd.h>"  nano ~/ORB_SLAM2/src/Tracking.cc
