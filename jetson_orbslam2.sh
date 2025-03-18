@@ -216,3 +216,5 @@ find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_BGR2GRAY\b/cv::COLOR_BGR2GRAY/g' 
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_RGBA2GRAY\b/cv::COLOR_RGBA2GRAY/g' {} +
 find ~/ORB_SLAM2/ -type f -exec sed -i 's/\bCV_BGRA2GRAY\b/cv::COLOR_BGRA2GRAY/g' {} +
 # editar e acrescentar "#include <unistd.h>"  nano ~/ORB_SLAM2/src/Tracking.cc
+# nano ~/ORB_SLAM2/src/LocalMapping.cc - #include <unistd.h>
+# nano ~/ORB_SLAM2/src/LoopClosing.h   - #include <unistd.h>
