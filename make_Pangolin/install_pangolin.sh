@@ -1,5 +1,14 @@
 #!/bin/bash
 
+pip install pybind11
+python -m pybind11 --cmake-dir
+
+sudo apt-get install python3-distutils
+cmake -Dpybind11_DIR=/path/to/pybind11/share/cmake/pybind11 ..
+make
+
+sudo make install
+
 # Atualizar e instalar dependências
 sudo apt-get update
 sudo apt-get install -y build-essential cmake libglew-dev libpython3.8-dev python3.8-venv
