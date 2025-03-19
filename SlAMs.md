@@ -1,12 +1,12 @@
 # SLAMs
 ## 1. pySLAM-D
-Foco: Algoritmo de SLAM em tempo real para UAVs (drones) com costura de imagens aéreas.
-Características:
+* Foco: Algoritmo de SLAM em tempo real para UAVs (drones) com costura de imagens aéreas.
+* Características:
 Geração de gráficos de fatores com nós representando poses de câmeras georreferenciadas.
 Utiliza fatores de odometria, GPS e atitude para otimização espacial.
 Projetado para ser robusto a ruídos de sensores e melhorar a consistência espacial1.
 Dependências: GTSAM, TEASER++, entre outras.
-Uso: Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
+* Uso: Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
 ## 2. PySlam
 Foco: Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
 Características:
