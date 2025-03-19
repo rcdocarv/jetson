@@ -7,6 +7,7 @@ Utiliza fatores de odometria, GPS e atitude para otimização espacial.
 Projetado para ser robusto a ruídos de sensores e melhorar a consistência espacial1.
 Dependências: GTSAM, TEASER++, entre outras.
 * **Uso:** Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
+[pySLAM-D](https://github.com/kylesayrs/pySLAM-D)
 ## 2. PySlam
 * **Foco:*** Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
 * **Características:**
