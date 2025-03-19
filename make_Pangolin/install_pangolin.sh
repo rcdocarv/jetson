@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pip install pybind11
+pip install PyOpenGL PyOpenGL_accelerate
 python -m pybind11 --cmake-dir
 
 sudo apt-get install python3-distutils
