@@ -25,7 +25,7 @@ Dependências: Open3D, Kornia, entre outras.
 
 ## Comparação Geral
 
-pySLAM-D é especializado para uso em drones, focando na precisão da georreferência e na robustez contra ruídos de sensores.
+**pySLAM-D** é especializado para uso em drones, focando na precisão da georreferência e na robustez contra ruídos de sensores.
 PySlam é uma implementação mais simples e direta, inspirada em ORB SLAM, adequada para quem busca uma solução eficiente e fácil de usar.
 pySLAM de Luigi Freda é mais abrangente, suportando múltiplos tipos de câmeras e oferecendo uma ampla gama de funcionalidades, tornando-o adequado para uma variedade de aplicações de SLAM.
 Se precisar de mais detalhes sobre algum desses projetos ou tiver outras perguntas, estou aqui para ajudar!
