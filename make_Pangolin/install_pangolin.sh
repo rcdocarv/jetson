@@ -44,3 +44,4 @@ import pangolin
 print(pangolin.__version__)
 python3 -m pip list
 python3.8 -m pip install --upgrade PyOpenGL_accelerate
+python3.8 -m pip install --upgrade numpy
