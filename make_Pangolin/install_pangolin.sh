@@ -4,9 +4,6 @@ pip install pybind11
 python -m pybind11 --cmake-dir
 
 sudo apt-get install python3-distutils
-cmake -Dpybind11_DIR=/path/to/pybind11/share/cmake/pybind11 ..
-make
-sudo make install
 
 # Atualizar e instalar dependências
 sudo apt-get update
@@ -26,8 +23,8 @@ pip install numpy
 # Criar diretório de build e compilar Pangolin
 mkdir build
 cd build
-cmake ..
-make -j4
+cmake -Dpybind11_DIR=/path/to/pybind11/share/cmake/pybind11 .. #cmake ..
+make -j4 # make
 
 # Instalar Pangolin
 sudo make install
