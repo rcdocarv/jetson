@@ -19,6 +19,8 @@ Design inspirado em ORB SLAM, conhecido por sua eficiência em visual SLAM.
 Dependências: Pangolin, OpenCV.
 * **Uso:** Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
 
+[PySlam](https://github.com/ljkeller/PySlam)
+
 ## 3. pySLAM v2.7.0
 * **Foco:*** Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
 * **Características:**
