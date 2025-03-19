@@ -25,17 +25,5 @@ mkdir build
 cd build
 cmake -Dpybind11_DIR=$(python -m pybind11 --cmake-dir) ..
 make -j8
-
-# Copiar manualmente o arquivo config.h, se necessário
-if [ ! -f src/include/_pangolin/config.h ]; then
-  cp src/include/config.h src/include/_pangolin/config.h
-fi
-
-# Instalar Pangolin
-sudo make install
-
-# Voltar ao diretório inicial
-cd ../..
-
-# Mensagem de conclusão
-echo "Pangolin foi instalado com sucesso no Ubuntu 18.04 com Python 3.8 na Jetson Nano."
+cd ..
+python3 setup.py install 
