@@ -24,7 +24,7 @@ pip install numpy
 mkdir build
 cd build
 cmake -Dpybind11_DIR=$(python -m pybind11 --cmake-dir) ..
-make -j4
+make -j8
 
 # Copiar manualmente o arquivo config.h, se necessário
 if [ ! -f src/include/_pangolin/config.h ]; then
