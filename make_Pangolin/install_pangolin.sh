@@ -1,7 +1,6 @@
 #!/bin/bash
 
 pip install pybind11
-pip install PyOpenGL PyOpenGL_accelerate
 python -m pybind11 --cmake-dir
 
 sudo apt-get install python3-distutils
@@ -24,8 +23,13 @@ pip install numpy
 # Criar diretório de build e compilar Pangolin
 mkdir build
 cd build
-cmake -Dpybind11_DIR=/path/to/pybind11/share/cmake/pybind11 .. #cmake ..
-make -j4 # make
+cmake -Dpybind11_DIR=$(python -m pybind11 --cmake-dir) ..
+make -j4
+
+# Copiar manualmente o arquivo config.h, se necessário
+if [ ! -f src/include/_pangolin/config.h ]; then
+  cp src/include/config.h src/include/_pangolin/config.h
+fi
 
 # Instalar Pangolin
 sudo make install
