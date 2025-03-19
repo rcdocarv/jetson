@@ -8,12 +8,12 @@ Projetado para ser robusto a ruídos de sensores e melhorar a consistência espa
 Dependências: GTSAM, TEASER++, entre outras.
 * Uso: Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
 ## 2. PySlam
-Foco: Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
-Características:
+* Foco: Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
+* Características:
 Utiliza Python3, Pangolin e OpenCV.
 Design inspirado em ORB SLAM, conhecido por sua eficiência em visual SLAM.
 Dependências: Pangolin, OpenCV.
-Uso: Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
+* Uso: Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
 ## 3. pySLAM
 * Foco: Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
 * Características:
