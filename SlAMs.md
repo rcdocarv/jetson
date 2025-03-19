@@ -15,13 +15,13 @@ Design inspirado em ORB SLAM, conhecido por sua eficiência em visual SLAM.
 Dependências: Pangolin, OpenCV.
 Uso: Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
 ## 3. pySLAM
-Foco: Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
-Características:
+* Foco: Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
+* Características:
 Suporta uma ampla gama de características locais e globais modernas.
 Métodos de fechamento de loop, pipeline de reconstrução volumétrica e modelos de predição de profundidade.
 Integração com bibliotecas como Open3D e Kornia2.
 Dependências: Open3D, Kornia, entre outras.
-Uso: Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
+* Uso: Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
 Comparação Geral
 pySLAM-D é especializado para uso em drones, focando na precisão da georreferência e na robustez contra ruídos de sensores.
 PySlam é uma implementação mais simples e direta, inspirada em ORB SLAM, adequada para quem busca uma solução eficiente e fácil de usar.
