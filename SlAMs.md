@@ -1,13 +1,16 @@
 # SLAMs
 ## 1. pySLAM-D
-* **Foco:*** Algoritmo de SLAM em tempo real para UAVs (drones) com costura de imagens aéreas.
+* **Foco:** Algoritmo de SLAM em tempo real para UAVs (drones) com costura de imagens aéreas.
 * ****Características:****
 Geração de gráficos de fatores com nós representando poses de câmeras georreferenciadas.
 Utiliza fatores de odometria, GPS e atitude para otimização espacial.
 Projetado para ser robusto a ruídos de sensores e melhorar a consistência espacial1.
 Dependências: GTSAM, TEASER++, entre outras.
 * **Uso:** Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
+  
 [pySLAM-D](https://github.com/kylesayrs/pySLAM-D)
+
+
 ## 2. PySlam
 * **Foco:*** Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
 * **Características:**
@@ -15,7 +18,8 @@ Utiliza Python3, Pangolin e OpenCV.
 Design inspirado em ORB SLAM, conhecido por sua eficiência em visual SLAM.
 Dependências: Pangolin, OpenCV.
 * **Uso:** Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
-## 3. pySLAM
+
+## 3. pySLAM v2.7.0
 * **Foco:*** Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
 * **Características:**
 Suporta uma ampla gama de características locais e globais modernas.
@@ -23,6 +27,8 @@ Métodos de fechamento de loop, pipeline de reconstrução volumétrica e modelo
 Integração com bibliotecas como Open3D e Kornia2.
 Dependências: Open3D, Kornia, entre outras.
 * **Uso:** Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
+
+[pySLAM v2.7.0](https://github.com/luigifreda/pyslam)
 
 ## Comparação Geral
 
