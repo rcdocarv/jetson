@@ -42,3 +42,5 @@ echo "__version__ = '1.0.0'" | sudo tee /usr/local/lib/python3.8/dist-packages/p
 python3.8
 import pangolin
 print(pangolin.__version__)
+python3 -m pip list
+pip3 install PyOpenGL_accelerate==3.2
