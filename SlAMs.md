@@ -11,7 +11,7 @@ Dependências: GTSAM, TEASER++, entre outras.
 [pySLAM-D](https://github.com/kylesayrs/pySLAM-D)
 
 
-## 2. PySlam
+## 2. PySlam (ljkeller)
 * **Foco:*** Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
 * **Características:**
 Utiliza Python3, Pangolin e OpenCV.
@@ -21,7 +21,7 @@ Dependências: Pangolin, OpenCV.
 
 [PySlam](https://github.com/ljkeller/PySlam)
 
-## 3. pySLAM v2.7.0
+## 3. pySLAM v2.7.0 (luigifreda)
 * **Foco:*** Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
 * **Características:**
 Suporta uma ampla gama de características locais e globais modernas.
@@ -36,7 +36,7 @@ Dependências: Open3D, Kornia, entre outras.
 
 **pySLAM-D** é especializado para uso em drones, focando na precisão da georreferência e na robustez contra ruídos de sensores.
 
-**PySlam** é uma implementação mais simples e direta, inspirada em ORB SLAM, adequada para quem busca uma solução eficiente e fácil de usar.
+**PySlam (ljkeller)** é uma implementação mais simples e direta, inspirada em ORB SLAM, adequada para quem busca uma solução eficiente e fácil de usar.
 
-**pySLAM** de Luigi Freda é mais abrangente, suportando múltiplos tipos de câmeras e oferecendo uma ampla gama de funcionalidades, tornando-o adequado para uma variedade de aplicações de SLAM.
+**pySLAM v2.7.0 (luigifreda)** de Luigi Freda é mais abrangente, suportando múltiplos tipos de câmeras e oferecendo uma ampla gama de funcionalidades, tornando-o adequado para uma variedade de aplicações de SLAM.
 Se precisar de mais detalhes sobre algum desses projetos ou tiver outras perguntas, estou aqui para ajudar!
