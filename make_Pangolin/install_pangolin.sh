@@ -26,4 +26,5 @@ cd build
 cmake -Dpybind11_DIR=$(python -m pybind11 --cmake-dir) ..
 make -j8
 cd ..
+# Editar o setup.py Substitua todas as instâncias de install_dirs por install_dir. Isso deve corrigir o erro
 python3 setup.py install 
