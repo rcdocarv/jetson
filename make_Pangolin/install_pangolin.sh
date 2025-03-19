@@ -31,3 +31,11 @@ sudo python3 setup.py install
 # testar no python 
 ## python3
 ## import pangolin
+# Eventualmente o pangolin nao terá versão 
+python3 -c "import pangolin; print(pangolin.__file__)" # comando irá dizer onde esta o modulo
+cd <caminho do comando anterior>
+sudo mkdir pangolin
+sudo mv pangolin.cpython-36m-aarch64-linux-gnu.so pangolin/
+cd pangolin
+sudo nano __init__.py
+# Introduzir __version__ = '1.0.0'  # Substitua '1.0.0' pela versão correta
