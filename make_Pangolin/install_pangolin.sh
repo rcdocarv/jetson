@@ -43,4 +43,4 @@ python3.8
 import pangolin
 print(pangolin.__version__)
 python3 -m pip list
-pip3 install PyOpenGL_accelerate==3.2
+python3.8 -m pip install --upgrade PyOpenGL_accelerate
