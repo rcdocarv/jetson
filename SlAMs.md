@@ -6,14 +6,14 @@ Geração de gráficos de fatores com nós representando poses de câmeras georr
 Utiliza fatores de odometria, GPS e atitude para otimização espacial.
 Projetado para ser robusto a ruídos de sensores e melhorar a consistência espacial1.
 Dependências: GTSAM, TEASER++, entre outras.
-* Uso: Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
+* **Uso:** Principalmente para aplicações de drones, onde a precisão da georreferência é crucial.
 ## 2. PySlam
 * **Foco:*** Implementação de SLAM em Python, influenciada pelo ORB SLAM 1 e 2.
 * **Características:**
 Utiliza Python3, Pangolin e OpenCV.
 Design inspirado em ORB SLAM, conhecido por sua eficiência em visual SLAM.
 Dependências: Pangolin, OpenCV.
-* Uso: Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
+* **Uso:** Projetado para ser uma implementação simples e eficiente de SLAM, adequada para pesquisa e desenvolvimento.
 ## 3. pySLAM
 * **Foco:*** Pipeline de SLAM visual em Python para câmeras monoculares, estéreo e RGBD.
 * **Características:**
@@ -21,7 +21,7 @@ Suporta uma ampla gama de características locais e globais modernas.
 Métodos de fechamento de loop, pipeline de reconstrução volumétrica e modelos de predição de profundidade.
 Integração com bibliotecas como Open3D e Kornia2.
 Dependências: Open3D, Kornia, entre outras.
-* Uso: Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
+* **Uso:** Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
 
 ## Comparação Geral
 
