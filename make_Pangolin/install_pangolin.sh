@@ -6,7 +6,6 @@ python -m pybind11 --cmake-dir
 sudo apt-get install python3-distutils
 cmake -Dpybind11_DIR=/path/to/pybind11/share/cmake/pybind11 ..
 make
-
 sudo make install
 
 # Atualizar e instalar dependências
