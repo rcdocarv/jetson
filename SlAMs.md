@@ -23,7 +23,7 @@ Integração com bibliotecas como Open3D e Kornia2.
 Dependências: Open3D, Kornia, entre outras.
 * Uso: Versátil e abrangente, adequado para várias aplicações de SLAM, desde pesquisa até aplicações práticas.
 
-**Comparação Geral**
+## Comparação Geral
 
 pySLAM-D é especializado para uso em drones, focando na precisão da georreferência e na robustez contra ruídos de sensores.
 PySlam é uma implementação mais simples e direta, inspirada em ORB SLAM, adequada para quem busca uma solução eficiente e fácil de usar.
