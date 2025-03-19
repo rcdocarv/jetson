@@ -37,5 +37,8 @@ cd <caminho do comando anterior>
 sudo mkdir pangolin
 sudo mv pangolin.cpython-36m-aarch64-linux-gnu.so pangolin/
 cd pangolin
-sudo nano __init__.py
+echo "__version__ = '1.0.0'" | sudo tee /usr/local/lib/python3.8/dist-packages/pangolin/__init__.py
 # Introduzir __version__ = '1.0.0'  # Substitua '1.0.0' pela versão correta
+python3.8
+import pangolin
+print(pangolin.__version__)
