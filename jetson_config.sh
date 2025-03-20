@@ -85,7 +85,9 @@ sudo apt install -y libgtk-3-dev libcanberra-gtk3-module libatlas-base-dev gfort
 sudo apt install -y python3.8-distutils python3.8-dev
 sudo apt remove --purge cmake
 sudo apt remove --purge firefox
+sudo apt autoremove
 pip install --upgrade pip
 pip install opencv-python
 pip install opencv-contrib-python
-
+sudo apt remove --purge python2.7
+sudo apt autoremove -y
