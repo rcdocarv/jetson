@@ -84,6 +84,7 @@ sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev libavforma
 sudo apt install -y libgtk-3-dev libcanberra-gtk3-module libatlas-base-dev gfortran
 sudo apt install -y python3.8-distutils python3.8-dev
 sudo apt remove --purge cmake
+sudo apt remove --purge firefox
 pip install --upgrade pip
 pip install opencv-python
 pip install opencv-contrib-python
