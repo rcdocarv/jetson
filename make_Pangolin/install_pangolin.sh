@@ -55,3 +55,7 @@ python3.8 -m pip install numpy
 # reinstalação cmake
 wget https://github.com/Kitware/CMake/releases/download/v4.0.0-rc4/cmake-4.0.0-rc4-linux-aarch64.sh
 chmod +x cmake-4.0.0-rc4-linux-aarch64.sh
+./cmake-4.0.0-rc4-linux-aarch64.sh --prefix=/opt/cmake --skip-license
+echo 'export PATH=/opt/cmake/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+cmake --version
