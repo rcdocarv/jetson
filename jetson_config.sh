@@ -101,3 +101,18 @@ sudo apt-get remove --purge -y openbox obconf obmenu
 sudo apt-get autoremove -y
 sudo apt-get autoclean
 
+# retirar docker
+sudo systemctl stop docker
+sudo systemctl disable docker
+sudo docker ps -q | xargs -r sudo docker stop
+sudo apt-get purge -y docker-ce docker-ce-cli containerd.io
+sudo apt-get purge -y nvidia-docker2 nvidia-container-runtime nvidia-container-toolkit
+sudo apt-get autoremove -y
+sudo apt-get autoclean
+sudo rm -rf /var/lib/docker
+sudo rm -rf /etc/docker
+sudo rm -rf /var/lib/containerd
+sudo find / -name '*docker*' -exec rm -rf {} +
+sudo groupdel docker
+sudo reboot
+sudo apt autoremove -y
