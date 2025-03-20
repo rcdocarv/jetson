@@ -83,6 +83,7 @@ sudo apt install python3.8 python3.8-dev python3.8-venv
 sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev
 sudo apt install -y libgtk-3-dev libcanberra-gtk3-module libatlas-base-dev gfortran
 sudo apt install -y python3.8-distutils python3.8-dev
+sudo apt remove --purge cmake
 pip install --upgrade pip
 pip install opencv-python
 pip install opencv-contrib-python
