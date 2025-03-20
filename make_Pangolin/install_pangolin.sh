@@ -51,6 +51,7 @@ pip install numpy --user
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
 sudo update-alternatives --config python
 python3.8 -m pip install numpy
+
 # -----------------------------------------------------------------------------
 # reinstalação cmake
 cd ~
