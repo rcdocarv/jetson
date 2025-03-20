@@ -53,12 +53,18 @@ sudo update-alternatives --config python
 python3.8 -m pip install numpy
 
 # reinstalação cmake
+cd ~
 wget https://github.com/Kitware/CMake/releases/download/v4.0.0-rc4/cmake-4.0.0-rc4-linux-aarch64.sh
 chmod +x cmake-4.0.0-rc4-linux-aarch64.sh
 sudo mkdir /opt/cmake
 ./cmake-4.0.0-rc4-linux-aarch64.sh
 #./cmake-4.0.0-rc4-linux-aarch64.sh --prefix=/opt/cmake --skip-license
-echo 'export PATH=/opt/cmake/bin:$PATH' >> ~/.bashrc
+cd ~/cmake-4.0.0-rc4-linux-aarch64
+sudo cp -r * /opt/cmake/
+cd ..
+rm -rf cmake-4.0.0-rc4-linux-aarch64.sh
+rm -rf cmake-4.0.0-rc4-linux-aarch64/
+#echo 'export PATH=/opt/cmake/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 cmake --version
 
