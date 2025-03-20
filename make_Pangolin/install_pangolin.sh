@@ -75,5 +75,6 @@ git clone https://github.com/catchorg/Catch2.git
 cd Catch2
 cmake -Bbuild -H. -DBUILD_TESTING=OFF
 cmake --build build
+export PATH=$PATH:/opt/cmake/bin/cmake
 sudo cmake --build build --target install
 ls /usr/local/lib | grep Catch2
