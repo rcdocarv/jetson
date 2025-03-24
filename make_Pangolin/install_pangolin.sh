@@ -72,14 +72,14 @@ cmake --version
 # Install Catch2
 cd ~
 git clone https://github.com/catchorg/Catch2.git
-cd Catch2
-
 cd ~/Catch2
 cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr/local
 cmake --build build --target install
-
-cmake -Bbuild -H. -DBUILD_TESTING=OFF
-cmake --build build
-export PATH=$PATH:/opt/cmake/bin/cmake
-sudo cmake --build build --target install
-ls /usr/local/lib | grep Catch2
+cmake ..
+make
+sudo make install 
+#cmake -Bbuild -H. -DBUILD_TESTING=OFF
+#cmake --build build
+#export PATH=$PATH:/opt/cmake/bin/cmake
+#sudo cmake --build build --target install
+#ls /usr/local/lib | grep Catch2
