@@ -90,4 +90,7 @@ git clone https://github.com/uoip/pangolin.git
 cd pangolin
 mkdir build
 cd build
-cmake .. ## erro a resolver
+cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
+make -j8
+cd ..
+python setup.py install
