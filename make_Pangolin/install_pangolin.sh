@@ -93,5 +93,5 @@ cd build
 cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 make -j8
 cd ..
-python setup.py install
 sed -i 's/install_dirs/install_dir/g' setup.py
+python setup.py install
