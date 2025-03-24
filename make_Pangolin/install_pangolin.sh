@@ -83,3 +83,11 @@ sudo make install
 #export PATH=$PATH:/opt/cmake/bin/cmake
 #sudo cmake --build build --target install
 #ls /usr/local/lib | grep Catch2
+
+
+# Install Pangolin 
+git clone https://github.com/uoip/pangolin.git
+cd pangolin
+mkdir build
+cd build
+cmake .. ## erro a resolver
