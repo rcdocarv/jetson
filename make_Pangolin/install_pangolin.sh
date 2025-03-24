@@ -98,5 +98,5 @@ cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 #cmake --build build -t pypangolin_pip_install
  make -j8
  cd ..
-# sed -i 's/install_dirs/install_dir/g' setup.py
- python3.8 setup.py install
+sed -i 's/install_dirs/install_dir/g' setup.py
+python3.8 setup.py install
