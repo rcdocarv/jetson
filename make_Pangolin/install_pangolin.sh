@@ -92,9 +92,11 @@ mkdir build
 cd build
 # cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 cmake -B build  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which python3) -DPYTHON_INCLUDE_DIR=$(python3 -c 'from distutils.sysconfig import get_python_inc; print(get_python_inc())') -DPYTHON_LIBRARY=$(python3 -c 'import sysconfig; print(sysconfig.get_config_var("LIBDIR"))') ..
-make -j8
-cd ..
-sed -i 's/install_dirs/install_dir/g' setup.py
-python3.8 setup.py install
-python3.8 -m pip install  PyOpenGL_accelerate
-python3.8 -m pip install PyOpenGL 
+cmake --build build
+cmake --build build -t pypangolin_pip_install
+#make -j8
+#cd ..
+#sed -i 's/install_dirs/install_dir/g' setup.py
+#python3.8 setup.py install
+#python3.8 -m pip install  PyOpenGL_accelerate
+#python3.8 -m pip install PyOpenGL 
