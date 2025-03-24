@@ -99,4 +99,4 @@ cmake -B build  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which p
 make -j8
 cd ..
 #sed -i 's/install_dirs/install_dir/g' setup.py
-python3.8 setup.py install
+sudo python3.8 setup.py install # este comando tem de instalar o pangolin mas tem de baixar o setup.py deste repositorio 
