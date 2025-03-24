@@ -93,7 +93,7 @@ cd pangolin
 mkdir build
 cd build
 #cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
-cmake -B build  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which python3) -DPYTHON_INCLUDE_DIR=$(python3 -c 'from distutils.sysconfig import get_python_inc; print(get_python_inc())') -DPYTHON_LIBRARY=$(python3 -c 'import sysconfig; print(sysconfig.get_config_var("LIBDIR"))') ..
+#cmake -B build  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which python3) -DPYTHON_INCLUDE_DIR=$(python3 -c 'from distutils.sysconfig import get_python_inc; print(get_python_inc())') -DPYTHON_LIBRARY=$(python3 -c 'import sysconfig; print(sysconfig.get_config_var("LIBDIR"))') ..
 #cmake --build build
 #cmake --build build -t pypangolin_pip_install
 cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which python3.8) ..
