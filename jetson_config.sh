@@ -4,8 +4,8 @@
 sudo apt update
 # Remove softwares desnecessários
 sudo apt remove --purge -y \
-chromium-browser libreoffice* remmina thunderbird* transmission \
-cheese* smplayer lxmusic rhythmbox shotwell
+chromium-browser libreoffice* remmina thunderbird* transmission* \
+cheese* smplayer lxmusic rhythmbox shotwell evince mutt
     
 # Remover pacotes órfãos
 sudo apt autoremove --purge -y
