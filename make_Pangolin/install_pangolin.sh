@@ -53,7 +53,7 @@ sudo update-alternatives --config python
 python3.8 -m pip install numpy
 
 # -----------------------------------------------------------------------------
-# reinstalação cmake
+# reinstalação/compilação cmake
 cd ~
 wget https://github.com/Kitware/CMake/releases/download/v4.0.0-rc4/cmake-4.0.0-rc4-linux-aarch64.sh
 chmod +x cmake-4.0.0-rc4-linux-aarch64.sh
@@ -73,6 +73,11 @@ cmake --version
 cd ~
 git clone https://github.com/catchorg/Catch2.git
 cd Catch2
+
+cd ~/Catch2
+cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr/local
+cmake --build build --target install
+
 cmake -Bbuild -H. -DBUILD_TESTING=OFF
 cmake --build build
 export PATH=$PATH:/opt/cmake/bin/cmake
