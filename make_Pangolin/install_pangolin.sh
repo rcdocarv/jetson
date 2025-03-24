@@ -86,6 +86,8 @@ sudo make install
 
 
 # Install Pangolin 
+python3.8 -m pip install  PyOpenGL_accelerate
+python3.8 -m pip install PyOpenGL 
 git clone https://github.com/uoip/pangolin.git
 cd pangolin
 mkdir build
@@ -98,5 +100,3 @@ cmake --build build -t pypangolin_pip_install
 # cd ..
 # sed -i 's/install_dirs/install_dir/g' setup.py
 # python3.8 setup.py install
-# python3.8 -m pip install  PyOpenGL_accelerate
-# python3.8 -m pip install PyOpenGL 
