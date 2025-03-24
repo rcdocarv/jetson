@@ -95,3 +95,4 @@ make -j8
 cd ..
 sed -i 's/install_dirs/install_dir/g' setup.py
 python3.8 setup.py install
+python3.8 -m pip install  PyOpenGL_accelerate
