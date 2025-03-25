@@ -115,7 +115,21 @@ git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+# cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake \
+   -DCMAKE_BUILD_TYPE=Release \
+   -DCMAKE_INSTALL_PREFIX=/usr/local \
+   -DCMAKE_CXX_FLAGS=-std=c++11 \
+   -DBUILD_SHARED_LIBS=ON \
+   -DBUILD_UNITTESTS=OFF \
+   -DBUILD_WITH_MARCH_NATIVE=OFF \
+   -DG2O_USE_CHOLMOD=OFF \
+   -DG2O_USE_CSPARSE=ON \
+   -DG2O_USE_OPENGL=OFF \
+   -DG2O_USE_OPENMP=ON \
+   DCMAKE_CXX_STANDARD=17 \
+   -DCMAKE_EXE_LINKER_FLAGS="-lstdc++fs" \
+   ..
 make -j$(nproc)
 sudo make install
 
