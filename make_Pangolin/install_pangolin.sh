@@ -103,3 +103,22 @@ cd ..
 sudo make install
 make install
 sudo python3.8 setup.py install # este comando tem de instalar o pangolin mas tem de baixar o setup.py deste repositorio 
+
+# instalar o g2o
+cd ~
+git clone https://github.com/RainerKuemmerle/g2o.git
+cd g2o
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+sudo make install
+
+# OpenVslam
+sudo apt install libyaml-cpp-dev
+git clone --recursive https://github.com/OpenVSLAM-Community/openvslam.git
+cd openvslam
+mkdir build && cd build
+cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DPYTHON_EXECUTABLE=$(which python3.8) -DBUILD_PYTHON_BINDINGS=ON ..
+sudo apt install sqlite3 libsqlite3-dev
+sudo apt install libg2o-dev
