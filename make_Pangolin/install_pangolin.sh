@@ -127,7 +127,7 @@ cmake \
    -DG2O_USE_CSPARSE=ON \
    -DG2O_USE_OPENGL=OFF \
    -DG2O_USE_OPENMP=ON \
-   DCMAKE_CXX_STANDARD=17 \
+   -DCMAKE_CXX_STANDARD=8.4 \
    -DCMAKE_EXE_LINKER_FLAGS="-lstdc++fs" \
    ..
 make -j$(nproc)
