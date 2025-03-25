@@ -105,12 +105,15 @@ make install
 sudo python3.8 setup.py install # este comando tem de instalar o pangolin mas tem de baixar o setup.py deste repositorio 
 
 # instalar o g2o
+sudo apt install gcc-9 g++-9
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 100
+sudo apt install libeigen3-dev libboost-all-dev libsuitesparse-dev
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_CXX_STANDARD=17 -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 sudo make install
 
