@@ -120,6 +120,7 @@ make -j$(nproc)
 sudo make install
 
 # OpenVslam
+# https://vox-nav.readthedocs.io/en/latest/openvslam/index.html
 sudo apt install libyaml-cpp-dev
 git clone --recursive https://github.com/OpenVSLAM-Community/openvslam.git
 cd openvslam
