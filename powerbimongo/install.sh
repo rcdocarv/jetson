@@ -8,3 +8,12 @@ cd /opt/mongodb-bi-connector
 cp example-mongosqld-config.yml mongosqld.conf
 nano mongosqld.conf
 ´´´
+agora coloco esse conteudo 
+
+´´´
+net:
+  bindIp: 0.0.0.0
+  port: 3307
+mongodb:
+  uri: "mongodb://localhost:27017"
+  ´´´´ 
