@@ -1,19 +1,5 @@
-´´´ shell
-curl -LO https://info-mongodb-com.s3.amazonaws.com/mongodb-bi/v2/mongodb-bi-linux-x86_64-debian12-v2.14.14.tgz
-curl -LO https://info-mongodb-com.s3.amazonaws.com/mongodb-bi/v2/mongodb-bi-linux-x86_64-debian12-v2.14.14.tgz.sig
-gpg --verify mongodb-bi-linux-x86_64-debian12-v2.14.14.tgz.sig mongodb-bi-linux-x86_64-debian12-v2.14.14.tgz
-tar -xvzf mongodb-bi-linux-x86_64-debian12-v2.14.14.tgz
-sudo mv mongodb-bi-linux-x86_64-debian12-v2.14.14 /opt/mongodb-bi-connector
-cd /opt/mongodb-bi-connector
-cp example-mongosqld-config.yml mongosqld.conf
-nano mongosqld.conf
-´´´
-agora coloco esse conteudo  e se tiver key comentar tudo
+``` shell 
+mkdir pbi
+wget https://media.datadirect.com/download/files/evals/ODBC/PROGRESS_DATADIRECT_ODBC_MONGODB_LINUX_64.tgz
 
-´´´
-net:
-  bindIp: 0.0.0.0
-  port: 3307
-mongodb:
-  uri: "mongodb://localhost:27017"
-  ´´´´ 
+```
