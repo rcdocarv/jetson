@@ -37,6 +37,8 @@ AuthenticationMethod=0
  sudo apt-get update && sudo apt-get install -y unixodbc unixodbc-dev
 
 ```
+[repo](https://github.com/mongodb/mongo-bi-connector-odbc-driver/releases/)
+
 Beleza! Vamos instalar o MongoDB Connector for ODBC (versão 1.4.5) no Ubuntu 14.04 (64 bits). 🚀
 
 🛠️ 1. Instalar Dependências
