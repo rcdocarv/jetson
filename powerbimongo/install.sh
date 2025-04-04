@@ -8,7 +8,7 @@ cd /opt/mongodb-bi-connector
 cp example-mongosqld-config.yml mongosqld.conf
 nano mongosqld.conf
 ´´´
-agora coloco esse conteudo 
+agora coloco esse conteudo  e se tiver key comentar tudo
 
 ´´´
 net:
