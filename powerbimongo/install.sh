@@ -12,4 +12,14 @@ export PATH=$JAVA_HOME/bin:$PATH
 source /etc/profile
 cd pbi
 sudo ./PROGRESS_DATADIRECT_ODBC_8.0_LINUX_64_INSTALL.bin
+
+sudo nano /etc/odbcinst.ini
+```
+Acrescentar :
+
+[DataDirect MongoDB]
+Description=DataDirect MongoDB ODBC Driver
+Driver=/opt/Progress/DataDirect/ODBC_80/lib/ivmongo28.so
+
+``` shell 
 ```
