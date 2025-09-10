@@ -92,14 +92,14 @@ pip install opencv-contrib-python
 sudo apt remove --purge python2.7 && sudo apt autoremove -y
 
 # remover outros ambientes graficos
-sudo update-alternatives --config x-session-manager
-sudo apt-get remove --purge -y ubuntu-unity-desktop unity unity-session compiz*
-sudo apt-get remove --purge -y indicator-* libunity9 lightdm-gtk-greeter unity-*
-sudo apt-get remove --purge -y ubuntu-gnome-desktop gnome-shell gdm3
-sudo apt-get remove --purge -y gnome-* nautilus adwaita-* mutter*
-sudo apt-get remove --purge -y openbox obconf obmenu
-sudo apt-get autoremove -y
-sudo apt-get autoclean
+#sudo update-alternatives --config x-session-manager
+#sudo apt-get remove --purge -y ubuntu-unity-desktop unity unity-session compiz*
+#sudo apt-get remove --purge -y indicator-* libunity9 lightdm-gtk-greeter unity-*
+#sudo apt-get remove --purge -y ubuntu-gnome-desktop gnome-shell gdm3
+#sudo apt-get remove --purge -y gnome-* nautilus adwaita-* mutter*
+#sudo apt-get remove --purge -y openbox obconf obmenu
+#sudo apt-get autoremove -y
+#sudo apt-get autoclean
 
 # retirar docker
 sudo systemctl stop docker
@@ -116,3 +116,10 @@ sudo find / -name '*docker*' -exec rm -rf {} +
 sudo groupdel docker
 sudo reboot
 sudo apt autoremove -y
+
+# Cleanings
+sudo journalctl --vacuum-time=7d
+rm -rf ~/.cache/pip
+pip cache purge
+sudo journalctl --disk-usage
+/usr/local/cuda/samples/
