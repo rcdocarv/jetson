@@ -48,6 +48,7 @@ echo "Fan Configurada"
 # FULL CUDA E CudNN (versão completa)
 sudo apt install nvidia-jetpack
 sudo apt install -y nvidia-cuda libcudnn8
+sudo usermod -aG sudo,video,i2c "$USER"
 
 # adciona ao path/bashrc
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
