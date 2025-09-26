@@ -1,6 +1,7 @@
 # JETSON ORIN NX - CUDA + Pytorch
 ## no caso do jetpack6.2
 https://ninjalabo.ai/blogs/jetson_pytorch.html
+https://github.com/azimjaan21/jetpack-6.1-pytorch-torchvision-
 
 ## Configurar Keyboard Timezone Lang locale
 ### keyboard
