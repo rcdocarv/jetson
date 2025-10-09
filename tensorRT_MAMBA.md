@@ -22,7 +22,7 @@ cd /home/star/.local/share/mamba/envs/3py08
 
 ## Criaçao do softlink
 
-ls -s /usr/lib/python3/dist-packages/tensorrt tensorrt
+ln -s /usr/lib/python3/dist-packages/tensorrt tensorrt
 
 ## 🔹 2. Itálico e Negrito
 
