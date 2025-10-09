@@ -15,7 +15,9 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 ```bash
 python -c "import sys; print(sys.prefix)"
 #=> /home/star/.local/share/mamba/envs/3py08
+cd /home/star/.local/share/mamba/envs/3py08
 ```
+
 ## 🔹 2. Itálico e Negrito
 
 | Estilo | Markdown | Resultado |
