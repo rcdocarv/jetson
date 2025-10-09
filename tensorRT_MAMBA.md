@@ -5,3 +5,24 @@ Deste modo dado que o TensorRT nos e fornecido pela instalaçao do JetPack dado 
 Qualquer instalaçao via apt do tensorrt para python ou forçada via pip/whl/conda/manba/repo danifica ''permanentemente o sistema operativo !!!!''
 
 Assim optou-se por uma soluçao, segura aparentemente fragil na robustez mas por ter partes compiladas para o hardware nao tem como contornar!
+
+---
+
+## 🔹 2. Itálico e Negrito
+
+| Estilo | Markdown | Resultado |
+|:-------|:----------|:-----------|
+| **Itálico** | `*texto*` ou `_texto_` | *texto* |
+| **Negrito** | `**texto**` ou `__texto__` | **texto** |
+| **Negrito + Itálico** | `***texto***` | ***texto*** |
+
+---
+
+## 🔹 3. Combinar estilos dentro de código
+
+👉 **Importante:**  
+Dentro de blocos de código (\`\`\` … \`\`\`), **Markdown não é interpretado** — o texto é mostrado literalmente.  
+
+Se queres negrito ou itálico *fora* de um bloco de código mas ainda destacando código curto:
+```md
+O comando **`sudo apt update`** atualiza os pacotes.
