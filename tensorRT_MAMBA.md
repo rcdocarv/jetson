@@ -5,8 +5,11 @@ Deste modo dado que o TensorRT nos e fornecido pela instalaçao do JetPack dado 
 Qualquer instalaçao via apt do tensorrt para python ou forçada via pip/whl/conda/manba/repo danifica ''permanentemente o sistema operativo !!!!''
 
 Assim optou-se por uma soluçao, segura aparentemente fragil na robustez mas por ter partes compiladas para o hardware nao tem como contornar!
+Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo para dentro do ambiente Mamba/Conda.
 
 ---
+
+## Determina
 
 ## 🔹 2. Itálico e Negrito
 
