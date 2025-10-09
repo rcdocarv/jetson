@@ -11,6 +11,7 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 
 ## Determinaçao do path do enviroment
 ### Verificar o ambiente ativo no Python
+**Ativar o ambiente conda primeiro** deve ter a mesma versao de python que oficialmente suportada pelo jetpack!
 ```bash
   python -c "import sys; print(sys.prefix)"
   #=> /home/star/miniforge3
