@@ -19,6 +19,9 @@ python -c "import sys; print(sys.prefix)"
 #=> /home/star/.local/share/mamba/envs/3py08
 cd /home/star/.local/share/mamba/envs/3py08
 ```
+ls -s /usr/lib/python3/dist-packages/tensorrt tensorrt
+
+## Criaçao do softlink
 
 ## 🔹 2. Itálico e Negrito
 
