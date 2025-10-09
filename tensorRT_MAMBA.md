@@ -15,10 +15,11 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 print("Olá mundo!")
 x = 5 + 3
 print(x)
+```
 
-'''bash
+```bash
   python -c "import sys; print(sys.prefix)"
-
+```
 ## 🔹 2. Itálico e Negrito
 
 | Estilo | Markdown | Resultado |
