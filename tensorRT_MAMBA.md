@@ -15,7 +15,7 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 
 Pelos comandos abaixo identifica-se o path do enviroment, entramos na pasta do mesmo.
 ```bash
-python -c "import sys; print(sys.prefix)"
+python -c "import sysconfig; print(sysconfig.get_paths()['purelib'])"
 #=> /home/star/.local/share/mamba/envs/3py08
 cd /home/star/.local/share/mamba/envs/3py08
 ```
