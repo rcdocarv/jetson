@@ -13,7 +13,6 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 
 '''bash
   python -c "import sys; print(sys.prefix)"
-'''
 
 ## 🔹 2. Itálico e Negrito
 
