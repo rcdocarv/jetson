@@ -10,7 +10,7 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 ---
 
 ## Determinaçao do path do enviroment
-
+### Verificar o ambiente ativo no Python
 ```bash
   python -c "import sys; print(sys.prefix)"
 ```
