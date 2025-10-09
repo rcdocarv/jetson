@@ -9,7 +9,11 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 
 ---
 
-## Determina
+## Determinaçao do path do enviroment
+
+'''bash
+python -c "import sys; print(sys.prefix)"
+'''
 
 ## 🔹 2. Itálico e Negrito
 
