@@ -13,7 +13,7 @@ Esta Soluçao acento num soflink do modulo tensorRT instalado no python nativo p
 ### Verificar o ambiente ativo no Python
 ```bash
   python -c "import sys; print(sys.prefix)"
-# => /home/star/miniforge3
+  #=> /home/star/miniforge3
 ```
 ## 🔹 2. Itálico e Negrito
 
